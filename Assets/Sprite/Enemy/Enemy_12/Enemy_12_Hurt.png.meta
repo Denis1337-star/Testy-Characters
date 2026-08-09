@@ -1,0 +1,444 @@
+fileFormatVersion: 2
+guid: 6e5fd849ad7014b4bbe2b929980c197e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4314704111320929525
+    second: Enemy_12_Hurt_0
+  - first:
+      213: -9114114928491973168
+    second: Enemy_12_Hurt_1
+  - first:
+      213: -3001212746275370059
+    second: Enemy_12_Hurt_2
+  - first:
+      213: 1558129231214022743
+    second: Enemy_12_Hurt_3
+  - first:
+      213: -2640111156103409583
+    second: Enemy_12_Hurt_4
+  - first:
+      213: -711658708488398360
+    second: Enemy_12_Hurt_5
+  - first:
+      213: -127304050738038257
+    second: Enemy_12_Hurt_6
+  - first:
+      213: -1726352274762754259
+    second: Enemy_12_Hurt_7
+  - first:
+      213: -5593942020620235189
+    second: Enemy_12_Hurt_8
+  - first:
+      213: 5565222133062129332
+    second: Enemy_12_Hurt_9
+  - first:
+      213: -7961576466530484282
+    second: Enemy_12_Hurt_10
+  - first:
+      213: -2672453583666047654
+    second: Enemy_12_Hurt_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemy_12_Hurt_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 775
+        width: 186
+        height: 249
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b6cc598771f14c0800000000000000
+      internalID: -4314704111320929525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_12_Hurt_1
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 771
+        width: 197
+        height: 253
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5b62dd2c8248180800000000000000
+      internalID: -9114114928491973168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_12_Hurt_2
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 768
+        width: 196
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bbc1ea88ec8956d0800000000000000
+      internalID: -3001212746275370059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_12_Hurt_3
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 768
+        width: 182
+        height: 255
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7501aacc7469f9510800000000000000
+      internalID: 1558129231214022743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_12_Hurt_4
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 762
+        width: 192
+        height: 261
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15019e434e07c5bd0800000000000000
+      internalID: -2640111156103409583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_12_Hurt_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 206
+        height: 262
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e95c37dc2eaf16f0800000000000000
+      internalID: -711658708488398360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_12_Hurt_6
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 502
+        width: 202
+        height: 261
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0a7a4de3a9bb3ef0800000000000000
+      internalID: -127304050738038257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_12_Hurt_7
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 506
+        width: 193
+        height: 260
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d271491b0c3ca08e0800000000000000
+      internalID: -1726352274762754259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_12_Hurt_8
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 502
+        width: 184
+        height: 258
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4eccc6ce535e52b0800000000000000
+      internalID: -5593942020620235189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_12_Hurt_9
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 232
+        width: 175
+        height: 255
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b65f415b04ab3d40800000000000000
+      internalID: 5565222133062129332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_12_Hurt_10
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 232
+        width: 178
+        height: 252
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf375cc26cc28190800000000000000
+      internalID: -7961576466530484282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_12_Hurt_11
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 232
+        width: 182
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a559ddaff9989ead0800000000000000
+      internalID: -2672453583666047654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 93ff68d6a8dc9214ebb19590f8732451
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Enemy_12_Hurt_0: -4314704111320929525
+      Enemy_12_Hurt_1: -9114114928491973168
+      Enemy_12_Hurt_10: -7961576466530484282
+      Enemy_12_Hurt_11: -2672453583666047654
+      Enemy_12_Hurt_2: -3001212746275370059
+      Enemy_12_Hurt_3: 1558129231214022743
+      Enemy_12_Hurt_4: -2640111156103409583
+      Enemy_12_Hurt_5: -711658708488398360
+      Enemy_12_Hurt_6: -127304050738038257
+      Enemy_12_Hurt_7: -1726352274762754259
+      Enemy_12_Hurt_8: -5593942020620235189
+      Enemy_12_Hurt_9: 5565222133062129332
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

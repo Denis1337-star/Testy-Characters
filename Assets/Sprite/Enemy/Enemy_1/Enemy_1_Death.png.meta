@@ -1,0 +1,522 @@
+fileFormatVersion: 2
+guid: e1d39e35fa5bf5340a00a0c4e41c2bc2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4408948716212586860
+    second: Buther_died_0
+  - first:
+      213: -2230879767738606585
+    second: Buther_died_1
+  - first:
+      213: 6364876254033005898
+    second: Buther_died_2
+  - first:
+      213: -8192840476475187328
+    second: Buther_died_3
+  - first:
+      213: 4168069308398946319
+    second: Buther_died_4
+  - first:
+      213: -7061836863932693477
+    second: Buther_died_5
+  - first:
+      213: -5065048723447858395
+    second: Buther_died_6
+  - first:
+      213: -8978602743211262375
+    second: Buther_died_7
+  - first:
+      213: -805074799485021932
+    second: Buther_died_8
+  - first:
+      213: 1294267538349031292
+    second: Buther_died_9
+  - first:
+      213: 8499487077836336764
+    second: Buther_died_10
+  - first:
+      213: -5335051610391428222
+    second: Buther_died_11
+  - first:
+      213: -6253142931481589816
+    second: Buther_died_12
+  - first:
+      213: -847056978498162891
+    second: Buther_died_13
+  - first:
+      213: 3105022706869036933
+    second: Buther_died_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Buther_died_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 778
+        width: 164
+        height: 234
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6904ce6f7bbf2d30800000000000000
+      internalID: 4408948716212586860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buther_died_1
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 771
+        width: 167
+        height: 235
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c9553cba25a01e0800000000000000
+      internalID: -2230879767738606585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buther_died_2
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 773
+        width: 169
+        height: 236
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4dc4f00b35945850800000000000000
+      internalID: 6364876254033005898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buther_died_3
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 766
+        width: 171
+        height: 236
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08f11428efe2d4e80800000000000000
+      internalID: -8192840476475187328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buther_died_4
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 766
+        width: 164
+        height: 240
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f08c35ed3f4f7d930800000000000000
+      internalID: 4168069308398946319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buther_died_5
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 518
+        width: 183
+        height: 235
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b14888799c05ffd90800000000000000
+      internalID: -7061836863932693477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buther_died_6
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 528
+        width: 210
+        height: 219
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52b38d4950555b9b0800000000000000
+      internalID: -5065048723447858395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buther_died_7
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 549
+        width: 221
+        height: 205
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95e7b8f2068956380800000000000000
+      internalID: -8978602743211262375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buther_died_8
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 563
+        width: 231
+        height: 186
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 411931f3cbcc3d4f0800000000000000
+      internalID: -805074799485021932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buther_died_9
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 304
+        width: 239
+        height: 174
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7ffc93087926f110800000000000000
+      internalID: 1294267538349031292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buther_died_10
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 318
+        width: 239
+        height: 169
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e257f077e34f570800000000000000
+      internalID: 8499487077836336764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buther_died_11
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 338
+        width: 239
+        height: 166
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2834e30a3d616f5b0800000000000000
+      internalID: -5335051610391428222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buther_died_12
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 55
+        width: 239
+        height: 166
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c78b4762af5839a0800000000000000
+      internalID: -6253142931481589816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buther_died_13
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 55
+        width: 239
+        height: 166
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53fe91c7a26ae34f0800000000000000
+      internalID: -847056978498162891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buther_died_14
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 89
+        width: 239
+        height: 166
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 587637663b1471b20800000000000000
+      internalID: 3105022706869036933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 355f5dd73c0ec464bba7c777764013ae
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":6,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Buther_died_0: 4408948716212586860
+      Buther_died_1: -2230879767738606585
+      Buther_died_10: 8499487077836336764
+      Buther_died_11: -5335051610391428222
+      Buther_died_12: -6253142931481589816
+      Buther_died_13: -847056978498162891
+      Buther_died_14: 3105022706869036933
+      Buther_died_2: 6364876254033005898
+      Buther_died_3: -8192840476475187328
+      Buther_died_4: 4168069308398946319
+      Buther_died_5: -7061836863932693477
+      Buther_died_6: -5065048723447858395
+      Buther_died_7: -8978602743211262375
+      Buther_died_8: -805074799485021932
+      Buther_died_9: 1294267538349031292
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

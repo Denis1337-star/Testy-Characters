@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 5cf1b4629c7cb104e98d369448084abd
+AssetOrigin:
+  serializedVersion: 1
+  productId: 332506
+  packageName: Tasty Characters Full Pack
+  packageVersion: 1.0
+  assetPath: Assets/Tasty_Characters - FullPack/Tasty_Characters - Sea Pack/Ressources/Textures/PackSea01.png
+  uploadId: 786852
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: PackSea01_0
+  - first:
+      213: 21300002
+    second: PackSea01_1
+  - first:
+      213: 21300004
+    second: PackSea01_2
+  - first:
+      213: 21300006
+    second: PackSea01_3
+  - first:
+      213: 21300008
+    second: PackSea01_4
+  - first:
+      213: 21300010
+    second: PackSea01_5
+  - first:
+      213: 21300012
+    second: PackSea01_6
+  - first:
+      213: 21300014
+    second: PackSea01_7
+  - first:
+      213: 21300016
+    second: PackSea01_8
+  - first:
+      213: 21300018
+    second: PackSea01_9
+  - first:
+      213: 21300020
+    second: PackSea01_10
+  - first:
+      213: 21300022
+    second: PackSea01_11
+  - first:
+      213: 21300024
+    second: PackSea01_12
+  - first:
+      213: 21300026
+    second: PackSea01_13
+  - first:
+      213: 21300028
+    second: PackSea01_14
+  - first:
+      213: 21300030
+    second: PackSea01_15
+  - first:
+      213: 21300032
+    second: PackSea01_16
+  - first:
+      213: 21300034
+    second: PackSea01_17
+  - first:
+      213: 21300036
+    second: PackSea01_18
+  - first:
+      213: 21300038
+    second: PackSea01_19
+  - first:
+      213: 21300040
+    second: PackSea01_20
+  - first:
+      213: 21300042
+    second: PackSea01_21
+  - first:
+      213: 21300044
+    second: PackSea01_22
+  - first:
+      213: 21300046
+    second: PackSea01_23
+  - first:
+      213: 21300048
+    second: PackSea01_24
+  - first:
+      213: 21300050
+    second: PackSea01_25
+  - first:
+      213: 21300052
+    second: PackSea01_26
+  - first:
+      213: 21300054
+    second: PackSea01_27
+  - first:
+      213: 21300056
+    second: PackSea01_28
+  - first:
+      213: 21300058
+    second: PackSea01_29
+  - first:
+      213: 21300060
+    second: PackSea01_30
+  - first:
+      213: 21300062
+    second: PackSea01_31
+  - first:
+      213: 21300064
+    second: PackSea01_32
+  - first:
+      213: 21300066
+    second: PackSea01_33
+  - first:
+      213: 21300068
+    second: PackSea01_34
+  - first:
+      213: 21300070
+    second: PackSea01_35
+  - first:
+      213: 21300072
+    second: PackSea01_36
+  - first:
+      213: 21300074
+    second: PackSea01_37
+  - first:
+      213: 21300076
+    second: PackSea01_38
+  - first:
+      213: 21300078
+    second: PackSea01_39
+  - first:
+      213: 21300080
+    second: PackSea01_40
+  - first:
+      213: 21300082
+    second: PackSea01_41
+  - first:
+      213: 21300084
+    second: PackSea01_42
+  - first:
+      213: 21300086
+    second: PackSea01_43
+  - first:
+      213: 21300088
+    second: PackSea01_44
+  - first:
+      213: 21300090
+    second: PackSea01_45
+  - first:
+      213: 21300092
+    second: PackSea01_46
+  - first:
+      213: 21300094
+    second: PackSea01_47
+  - first:
+      213: 21300096
+    second: PackSea01_48
+  - first:
+      213: 21300098
+    second: PackSea01_49
+  - first:
+      213: 21300100
+    second: PackSea01_50
+  - first:
+      213: 21300102
+    second: PackSea01_51
+  - first:
+      213: 21300104
+    second: PackSea01_52
+  - first:
+      213: 21300106
+    second: PackSea01_53
+  - first:
+      213: 21300108
+    second: PackSea01_54
+  - first:
+      213: 21300110
+    second: PackSea01_55
+  - first:
+      213: 21300112
+    second: PackSea01_56
+  - first:
+      213: 21300114
+    second: PackSea01_57
+  - first:
+      213: 21300116
+    second: PackSea01_58
+  - first:
+      213: 21300118
+    second: PackSea01_59
+  - first:
+      213: 21300120
+    second: PackSea01_60
+  - first:
+      213: 21300122
+    second: PackSea01_61
+  - first:
+      213: 21300124
+    second: PackSea01_62
+  - first:
+      213: 21300126
+    second: PackSea01_63
+  - first:
+      213: 21300128
+    second: PackSea01_64
+  - first:
+      213: 21300130
+    second: PackSea01_65
+  - first:
+      213: 21300132
+    second: PackSea01_66
+  - first:
+      213: 21300134
+    second: PackSea01_67
+  - first:
+      213: 21300136
+    second: PackSea01_68
+  - first:
+      213: 21300138
+    second: PackSea01_69
+  - first:
+      213: 21300140
+    second: PackSea01_70
+  - first:
+      213: 21300142
+    second: PackSea01_71
+  - first:
+      213: 21300144
+    second: PackSea01_72
+  - first:
+      213: 21300146
+    second: PackSea01_73
+  - first:
+      213: 21300148
+    second: PackSea01_74
+  - first:
+      213: 21300150
+    second: PackSea01_75
+  - first:
+      213: 21300152
+    second: PackSea01_76
+  - first:
+      213: 21300154
+    second: PackSea01_77
+  - first:
+      213: 21300156
+    second: PackSea01_78
+  - first:
+      213: 21300158
+    second: PackSea01_79
+  - first:
+      213: 21300160
+    second: PackSea01_80
+  - first:
+      213: 21300162
+    second: PackSea01_81
+  - first:
+      213: 21300164
+    second: PackSea01_82
+  - first:
+      213: 21300166
+    second: PackSea01_83
+  - first:
+      213: 21300168
+    second: PackSea01_84
+  - first:
+      213: 21300170
+    second: PackSea01_85
+  - first:
+      213: 21300172
+    second: PackSea01_86
+  - first:
+      213: 21300174
+    second: PackSea01_87
+  - first:
+      213: 21300176
+    second: PackSea01_88
+  - first:
+      213: 21300178
+    second: PackSea01_89
+  - first:
+      213: 21300180
+    second: PackSea01_90
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PackSea01_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 350
+        width: 91
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PackSea01_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 353
+        width: 96
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PackSea01_2
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 353
+        width: 103
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PackSea01_3
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 353
+        width: 89
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PackSea01_4
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 345
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PackSea01_5
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 353
+        width: 161
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PackSea01_6
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 353
+        width: 91
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PackSea01_7
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 353
+        width: 103
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PackSea01_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 197
+        width: 124
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PackSea01_9
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 197
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PackSea01_10
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 197
+        width: 97
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PackSea01_11
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 197
+        width: 134
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PackSea01_12
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 197
+        width: 91
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PackSea01_13
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 197
+        width: 137
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PackSea01_14
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 197
+        width: 98
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PackSea01_15
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 197
+        width: 100
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4dd896edf5ffab5449427472e08fa146
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      PackSea01_0: 21300000
+      PackSea01_1: 21300002
+      PackSea01_10: 21300020
+      PackSea01_11: 21300022
+      PackSea01_12: 21300024
+      PackSea01_13: 21300026
+      PackSea01_14: 21300028
+      PackSea01_15: 21300030
+      PackSea01_2: 21300004
+      PackSea01_3: 21300006
+      PackSea01_4: 21300008
+      PackSea01_5: 21300010
+      PackSea01_6: 21300012
+      PackSea01_7: 21300014
+      PackSea01_8: 21300016
+      PackSea01_9: 21300018
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
