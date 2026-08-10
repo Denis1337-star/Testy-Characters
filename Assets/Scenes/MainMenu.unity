@@ -1562,7 +1562,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 175, y: -40}
-  m_SizeDelta: {x: 200, y: 40}
+  m_SizeDelta: {x: 175, y: 40}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &502106861
 MonoBehaviour:
@@ -2995,6 +2995,7 @@ MonoBehaviour:
   _killsText: {fileID: 975615268}
   _lastLevelButton: {fileID: 1507230175}
   _nextLevelButton: {fileID: 1849238888}
+  _nextLockIcon: {fileID: 1203213766}
 --- !u!1 &908299066
 GameObject:
   m_ObjectHideFlags: 0
@@ -4313,7 +4314,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1203213765
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5504,7 +5505,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1849238889}
   m_OnClick:
     m_PersistentCalls:
@@ -5606,10 +5607,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyPresenter
   _animator: {fileID: 2133509387}
-  _enemyControllers:
-  - {fileID: 22100000, guid: 86978baae0bdd3849a35c1fd85c029a6, type: 2}
-  - {fileID: 22100000, guid: 2fc9a388857ddd24db5ac81e340c332d, type: 2}
-  - {fileID: 22100000, guid: f752b0795f4d15243ac16336e1310665, type: 2}
   _deathDelay: 0.3
 --- !u!1 &1907844131
 GameObject:
@@ -5842,7 +5839,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -225, y: -10}
-  m_SizeDelta: {x: 245, y: 75}
+  m_SizeDelta: {x: 250, y: 75}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1913283960
 MonoBehaviour:
@@ -5864,7 +5861,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1237M DPS
+  m_text: "1234567 \n\u0423\u0440\u043E\u043D \u043A\u043B\u0438\u043A\u0430"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5891,13 +5888,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -5908,7 +5905,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 0
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 3
   m_linkedTextComponent: {fileID: 0}
@@ -6177,7 +6174,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 175, y: -10}
-  m_SizeDelta: {x: 200, y: 30}
+  m_SizeDelta: {x: 175, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1952607010
 MonoBehaviour:

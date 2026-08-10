@@ -12,12 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c36004884c05b846ae0c571cba2270b, type: 3}
   m_Name: Locations Config
   m_EditorClassIdentifier: Assembly-CSharp::LocationsConfig
-  LevelsPerLocation: 50
+  LevelsPerLocation: 5
   Locations:
-  - Name: 1
+  - Name: Swamp
     Background: {fileID: 21300000, guid: a2bdc4e4cd3d3354188ef7f788d13310, type: 3}
     Enemies:
-    - {fileID: 0}
-  - Name: 
+    - {fileID: 22100000, guid: 179e9942dd1f77d40a4309c474519e5f, type: 2}
+  - Name: FireCastle
     Background: {fileID: 21300000, guid: 4a532dd35f05dfb4f9300ed162d0f212, type: 3}
-    Enemies: []
+    Enemies:
+    - {fileID: 22100000, guid: 86978baae0bdd3849a35c1fd85c029a6, type: 2}
+    - {fileID: 22100000, guid: 2fc9a388857ddd24db5ac81e340c332d, type: 2}
+    - {fileID: 22100000, guid: 8430062ef7d734d4a970f74e14476e5c, type: 2}
+    - {fileID: 22100000, guid: 951819ea412fc0942b88ae5ffdd25aac, type: 2}

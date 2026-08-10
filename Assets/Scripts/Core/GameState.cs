@@ -1,6 +1,4 @@
 using System;
-using UnityEngine;
-
 public class GameState 
 {
     public int enemyMaxHp = 10;

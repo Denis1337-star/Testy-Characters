@@ -4,18 +4,20 @@ using Zenject;
 public class EnemyPresenter : MonoBehaviour
 {
     [SerializeField] private Animator _animator;
-    [SerializeField] private RuntimeAnimatorController[] _enemyControllers;
     [SerializeField] float _deathDelay = 0.3f;
 
     CombatService _combatService;
     LevelService _levelService;
+    LocationService _locationService;
     GameState _state;
 
     [Inject]
-    private void Contstruct(CombatService combatService, LevelService levelService, GameState gameState)
+    private void Contstruct(CombatService combatService, LevelService levelService,
+        LocationService locationService, GameState gameState)
     {
         _combatService = combatService;
         _levelService = levelService;
+        _locationService = locationService;
         _state = gameState;
     }
 
@@ -23,14 +25,8 @@ public class EnemyPresenter : MonoBehaviour
     {
         _combatService.Damaged += PlayHurt;
         _combatService.EnemyDied += OnEnemyDied;
-        ApplyController(_state.currentEnemyIndex);
-    }
-    private void OnEnemyDied()
-    {
-        _animator.SetTrigger("Death");
-        CancelInvoke(nameof(AfterDeath));
-        Invoke(nameof(AfterDeath), _deathDelay);
 
+        ApplyFromState();
     }
     private void OnDestroy()
     {
@@ -42,25 +38,54 @@ public class EnemyPresenter : MonoBehaviour
     {
         _animator.SetTrigger("Hurt");
     }
+    private void OnEnemyDied()
+    {
+        _animator.SetTrigger("Death");
+        CancelInvoke(nameof(AfterDeath));
+        Invoke(nameof(AfterDeath), _deathDelay);
+
+    }
     private void AfterDeath()
     {
         _levelService.RegisterKill();
 
-        int next = _state.currentEnemyIndex + 1;
-        if (next >= _enemyControllers.Length) next = 0;
-        _state.currentEnemyIndex = next;
+        var pool = _locationService.GetEnemyPool();
+        if (pool.Length == 0) return;
 
-        ApplyController(next);
+        _state.currentEnemyIndex = PickNextIndex(_state.currentEnemyIndex, pool.Length);
+
+        ApplyController(pool[_state.currentEnemyIndex]);
         _combatService.RespawnEnemyHp();
-
-
     }
-    private void ApplyController(int index)
+    private int PickNextIndex(int current, int length)
     {
-        if (_enemyControllers == null || index < 0 || index >= _enemyControllers.Length) return;
-        _animator.runtimeAnimatorController = _enemyControllers[index];
+        if (length <= 1) return 0;
+
+        int next;
+        do
+        {
+            next = Random.Range(0, length);
+        }
+        while (next == current);
+
+        return next;
+    }
+    private void ApplyController(RuntimeAnimatorController controller)
+    {
+        if ( controller== null) return;
+
+        _animator.runtimeAnimatorController = controller;
         _animator.Rebind();
         _animator.Update(0f);
     }
+    private void ApplyFromState()
+    {
+        var pool = _locationService.GetEnemyPool();
+        if (pool.Length == 0) return;
 
+        if (_state.currentEnemyIndex < 0 || _state.currentEnemyIndex >= pool.Length)
+            _state.currentEnemyIndex = 0;
+
+        ApplyController(pool[_state.currentEnemyIndex]);
+    }
 }
