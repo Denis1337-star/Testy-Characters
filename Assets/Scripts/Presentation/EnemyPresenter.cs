@@ -30,7 +30,6 @@ public class EnemyPresenter : MonoBehaviour
     }
     private void OnDestroy()
     {
-        if (_combatService == null) return;
         _combatService.EnemyDied -= OnEnemyDied;
         _combatService.Damaged -= PlayHurt;
     }
@@ -47,6 +46,7 @@ public class EnemyPresenter : MonoBehaviour
     }
     private void AfterDeath()
     {
+        _combatService.RewardForKill();
         _levelService.RegisterKill();
 
         var pool = _locationService.GetEnemyPool();

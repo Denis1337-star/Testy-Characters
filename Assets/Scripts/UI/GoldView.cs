@@ -1,20 +1,18 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 using Zenject;
 
-public class EnemyHpView : MonoBehaviour
+public class GoldView : MonoBehaviour
 {
-    [SerializeField] private TMP_Text _hpText;
-    [SerializeField] private Image _hpFill;
-
-    private GameState _state;
+    [SerializeField] TMP_Text _goldText;
+    GameState _state;
 
     [Inject]
     private void Construct(GameState gameState)
     {
         _state = gameState;
     }
+
     private void Start()
     {
         _state.Changed += Refresh;
@@ -26,7 +24,7 @@ public class EnemyHpView : MonoBehaviour
     }
     private void Refresh()
     {
-        _hpText.text = $"HP {_state.enemyhp}";
-        _hpFill.fillAmount = (float)(_state.enemyhp / _state.enemyMaxHp);
+        _goldText.text = NumberFormatter.Format(_state.gold);
     }
+
 }
