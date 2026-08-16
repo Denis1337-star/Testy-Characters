@@ -5,6 +5,10 @@ public class HeroService
 {
     readonly GameState _state;
     readonly HeroesConfig _heroesConfig;
+    public int UpgradeMultiplier { get; private set; } = 1;
+    public event Action ListChanged;
+    public event Action MultiplierChanged;
+
 
     public HeroService(GameState gameState, HeroesConfig heroesConfig)
     {
@@ -63,22 +67,42 @@ public class HeroService
 
     public double GetUpgradeCost(int index)
     {
+        return GetUpgradeCost(index, UpgradeMultiplier);
+    }
+    public double GetUpgradeCost(int index, int levels)
+    {
+        if (levels < 1) levels = 1;
+
         var def = _heroesConfig.Heroes[index];
-        int lvl = _state.heroLevels[index];
-        return Math.Floor(def.BaseCost * Math.Pow(1.07d, lvl));
+        int current = _state.heroLevels[index];
+        double total = 0d;
+
+        for (int i = 0; i < levels; i++)
+        {
+            total += Math.Floor(def.BaseCost * Math.Pow(1.07d, current + i));
+        }
+        return total;
     }
     public bool TryUpgrade(int index)
     {
         if (index < 0 || index >= HeroCount) return false;
         if (!IsVisible(index)) return false;
 
-        double cost = GetUpgradeCost(index);
+        int levels = UpgradeMultiplier;
+        double cost = GetUpgradeCost(index, levels);
         if (_state.gold < cost) return false;
 
+        bool isWasLocked = _state.heroLevels[index] == 0;
+
         _state.gold -= cost;
-        _state.heroLevels[index]++;
+        _state.heroLevels[index] += levels;
+
         RecalculatePower();
         _state.Notify();
+
+        if (isWasLocked)
+            ListChanged?.Invoke();
+
         return true;
 
     }
@@ -111,6 +135,22 @@ public class HeroService
     public HeroDefinition GetDifinition(int index)
     {
         return _heroesConfig.Heroes[index];
-    } 
+    }
+    public void SetUpgradeMultiplier(int mult)
+    {
+        if (mult != 1 && mult != 10 & mult != 25 && mult != 100)
+            return;
 
+        if (UpgradeMultiplier == mult)
+            return;
+
+        UpgradeMultiplier = mult;
+        MultiplierChanged?.Invoke();
+        _state.Notify();
+    }
+    public bool CanAffordUpgarade(int index)
+    {
+        if (!IsVisible(index)) return false;
+        return _state.gold >= GetUpgradeCost(index, UpgradeMultiplier);
+    }
 }

@@ -26,7 +26,7 @@ public class EnemyHpView : MonoBehaviour
     }
     private void Refresh()
     {
-        _hpText.text = $"HP {_state.enemyhp}";
+        _hpText.text = $"HP {NumberFormatter.Format(_state.enemyhp)}";
         _hpFill.fillAmount = (float)(_state.enemyhp / _state.enemyMaxHp);
     }
 }

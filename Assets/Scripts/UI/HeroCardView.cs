@@ -47,19 +47,29 @@ public class HeroCardView : MonoBehaviour
     {
         int lvl = _heroService.GetLevel(_index);
         var def = _heroService.GetDifinition(_index);
+        int mult = _heroService.UpgradeMultiplier;
 
         if (lvl > 0)
         {
             _levelText.text = $"Уровень {lvl}";
-            _upgradeLabel.text = $"Уровень +";
+
+            if (mult == 1)
+                _upgradeLabel.text = $"Уровень +";
+            else
+                _upgradeLabel.text = $"x{mult}";
         }
         else
         {
             _levelText.text = "Не куплен";
-            _upgradeLabel.text = "Купить";
+
+            if (mult == 1)
+                _upgradeLabel.text = $"Купить";
+            else
+                _upgradeLabel.text = $"x{mult}";
         }
 
-        _costText.text = NumberFormatter.Format(_heroService.GetUpgradeCost(_index));
+        double cost = _heroService.GetUpgradeCost(_index);
+        _costText.text = NumberFormatter.Format(cost);
 
         double power = _heroService.GetPower(_index);
         if (lvl <= 0)
@@ -69,6 +79,8 @@ public class HeroCardView : MonoBehaviour
             _powerText.text = $"{NumberFormatter.Format(power)}\nУрон клика";
         else
             _powerText.text = $"{NumberFormatter.Format(power)} УВС";
+
+        _upgradeButton.interactable = _heroService.CanAffordUpgarade(_index);
     }
 
 }

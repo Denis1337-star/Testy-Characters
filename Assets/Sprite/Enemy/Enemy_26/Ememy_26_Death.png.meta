@@ -1,0 +1,522 @@
+fileFormatVersion: 2
+guid: 9ad9d87b064b74340816e35e24793024
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3744952452704181940
+    second: Ememy_26_Death_0
+  - first:
+      213: 7578348448213380062
+    second: Ememy_26_Death_1
+  - first:
+      213: 1981095371118914672
+    second: Ememy_26_Death_2
+  - first:
+      213: -8609515115279868829
+    second: Ememy_26_Death_3
+  - first:
+      213: 3795999007998680263
+    second: Ememy_26_Death_4
+  - first:
+      213: -8958431356615922960
+    second: Ememy_26_Death_5
+  - first:
+      213: -3338467900700771584
+    second: Ememy_26_Death_6
+  - first:
+      213: 3695102595489809992
+    second: Ememy_26_Death_7
+  - first:
+      213: -3421821580250391232
+    second: Ememy_26_Death_8
+  - first:
+      213: -1394354283687917738
+    second: Ememy_26_Death_9
+  - first:
+      213: 3166555920267349922
+    second: Ememy_26_Death_10
+  - first:
+      213: 4050308518589650380
+    second: Ememy_26_Death_11
+  - first:
+      213: -7093948570152693820
+    second: Ememy_26_Death_12
+  - first:
+      213: 3108054098760271285
+    second: Ememy_26_Death_13
+  - first:
+      213: 8104633780264426867
+    second: Ememy_26_Death_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ememy_26_Death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 779
+        width: 176
+        height: 245
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4be19240a6eb8f330800000000000000
+      internalID: 3744952452704181940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ememy_26_Death_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 776
+        width: 177
+        height: 248
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edb24e703c3bb2960800000000000000
+      internalID: 7578348448213380062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ememy_26_Death_2
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 775
+        width: 179
+        height: 249
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ca6b56eb34e7b10800000000000000
+      internalID: 1981095371118914672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ememy_26_Death_3
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 775
+        width: 181
+        height: 247
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c13692e9bd48880800000000000000
+      internalID: -8609515115279868829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ememy_26_Death_4
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 771
+        width: 176
+        height: 251
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc1f775cf81ea430800000000000000
+      internalID: 3795999007998680263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ememy_26_Death_5
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 513
+        width: 195
+        height: 242
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0faef2c15224da380800000000000000
+      internalID: -8958431356615922960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ememy_26_Death_6
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 534
+        width: 223
+        height: 221
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00bbfacd1216ba1d0800000000000000
+      internalID: -3338467900700771584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ememy_26_Death_7
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 550
+        width: 236
+        height: 205
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8464bccab34a74330800000000000000
+      internalID: 3695102595489809992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ememy_26_Death_8
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 550
+        width: 244
+        height: 185
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04dd860076f3380d0800000000000000
+      internalID: -3421821580250391232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ememy_26_Death_9
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 304
+        width: 252
+        height: 184
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 657ccb5aa2246ace0800000000000000
+      internalID: -1394354283687917738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ememy_26_Death_10
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 310
+        width: 251
+        height: 178
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af02f415ddd1fb20800000000000000
+      internalID: 3166555920267349922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ememy_26_Death_11
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 311
+        width: 250
+        height: 177
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc556416326953830800000000000000
+      internalID: 4050308518589650380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ememy_26_Death_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 43
+        width: 250
+        height: 177
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf882d5c5b3d8d90800000000000000
+      internalID: -7093948570152693820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ememy_26_Death_13
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 43
+        width: 250
+        height: 177
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b58d435cb6022b20800000000000000
+      internalID: 3108054098760271285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ememy_26_Death_14
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 43
+        width: 250
+        height: 177
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37dda43ab71797070800000000000000
+      internalID: 8104633780264426867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: eae83d32488fafb458b92931a1aea430
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Ememy_26_Death_0: 3744952452704181940
+      Ememy_26_Death_1: 7578348448213380062
+      Ememy_26_Death_10: 3166555920267349922
+      Ememy_26_Death_11: 4050308518589650380
+      Ememy_26_Death_12: -7093948570152693820
+      Ememy_26_Death_13: 3108054098760271285
+      Ememy_26_Death_14: 8104633780264426867
+      Ememy_26_Death_2: 1981095371118914672
+      Ememy_26_Death_3: -8609515115279868829
+      Ememy_26_Death_4: 3795999007998680263
+      Ememy_26_Death_5: -8958431356615922960
+      Ememy_26_Death_6: -3338467900700771584
+      Ememy_26_Death_7: 3695102595489809992
+      Ememy_26_Death_8: -3421821580250391232
+      Ememy_26_Death_9: -1394354283687917738
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

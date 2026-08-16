@@ -1325,7 +1325,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2018675764}
   m_HandleRect: {fileID: 2018675763}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1679,6 +1679,9 @@ GameObject:
   - component: {fileID: 612471252}
   - component: {fileID: 612471251}
   - component: {fileID: 612471250}
+  - component: {fileID: 612471257}
+  - component: {fileID: 612471258}
+  - component: {fileID: 612471259}
   m_Layer: 0
   m_Name: GameScripts
   m_TagString: Untagged
@@ -1789,6 +1792,49 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &612471257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612471249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a75a29a2f019bbb478a0ffab8d42d224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DpsTicker
+--- !u!114 &612471258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612471249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01800de5b56ffa04da9351e1a2e60192, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BackgroundView
+  _background: {fileID: 1376462862}
+--- !u!114 &612471259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612471249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54d50b86b0c93fa45aa98e93eb0e8fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradeMultiplierView
+  _x1: {fileID: 1920543364}
+  _x10: {fileID: 1702341406}
+  _x25: {fileID: 454352629}
+  _x100: {fileID: 79910324}
+  _activeColor: {r: 0.9820601, g: 1, b: 0, a: 1}
+  _idleColor: {r: 0.8, g: 0.9843137, b: 0.78039217, a: 1}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -3362,7 +3408,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.0007324219}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1122935820
@@ -5481,10 +5527,10 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1064752370}
+  - {fileID: 612471256}
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 359683101}
   - {fileID: 518815910}
   - {fileID: 349340478}
-  - {fileID: 1064752370}
-  - {fileID: 612471256}

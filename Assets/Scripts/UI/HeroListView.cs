@@ -20,12 +20,12 @@ public class HeroListView : MonoBehaviour
 
     private void Start()
     {
-        _state.Changed += Rebuild;
+        _heroService.ListChanged += Rebuild;
         Rebuild();
     }
     private void OnDestroy()
     {
-        _state.Changed -= Rebuild;
+        _heroService.ListChanged -= Rebuild;
     }
     private void Rebuild()
     {
