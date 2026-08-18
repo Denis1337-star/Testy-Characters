@@ -16,295 +16,295 @@ MonoBehaviour:
   - Name: "\u0418\u0433\u0440\u043E\u043A"
     Icon: {fileID: 4081954067068521759, guid: f5f1c19ce87450f4b97f8b363746558d, type: 3}
     IsClickHero: 1
-    BaseCost: 5
+    BaseCost: 10
     BasePower: 1
   - Name: "\u041F\u043E\u0441\u0435\u043B\u0435\u043D\u0435\u0446"
     Icon: {fileID: 21300002, guid: e48ddf4fb7304ce4ab48711eb6617a57, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 22
+    BasePower: 2
   - Name: "\u041A\u0440\u0435\u0441\u0442\u044C\u044F\u043D\u0438\u043D"
     Icon: {fileID: 21300008, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 46
+    BasePower: 3
   - Name: "\u042E\u043D\u0433\u0430"
     Icon: {fileID: 21300014, guid: 5cf1b4629c7cb104e98d369448084abd, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 99
+    BasePower: 6
   - Name: "\u041F\u0443\u0442\u043D\u0438\u043A"
     Icon: {fileID: 21300026, guid: e48ddf4fb7304ce4ab48711eb6617a57, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 213
+    BasePower: 10
   - Name: "\u0414\u0438\u043A\u0430\u0440\u044C"
     Icon: {fileID: 21300002, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 459
+    BasePower: 18
   - Name: "\u0428\u0440\u0430\u043C"
     Icon: {fileID: 21300002, guid: 5cf1b4629c7cb104e98d369448084abd, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 987
+    BasePower: 34
   - Name: "\u0411\u043E\u0440\u043E\u0434\u0430\u0447"
     Icon: {fileID: 21300020, guid: 5cf1b4629c7cb104e98d369448084abd, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 2123
+    BasePower: 61
   - Name: "\u0414\u0443\u0431\u0438\u043D\u0430"
     Icon: {fileID: 21300022, guid: 5cf1b4629c7cb104e98d369448084abd, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 4565
+    BasePower: 110
   - Name: "\u041A\u0430\u043F\u0438\u0448\u043E\u043D"
     Icon: {fileID: 21300018, guid: e48ddf4fb7304ce4ab48711eb6617a57, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 9816
+    BasePower: 198
   - Name: "\u041F\u043B\u0430\u0449\u043D\u0438\u043A"
     Icon: {fileID: 21300004, guid: e48ddf4fb7304ce4ab48711eb6617a57, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 21104
+    BasePower: 357
   - Name: "\u041F\u043B\u0430\u0449"
     Icon: {fileID: 21300006, guid: 5cf1b4629c7cb104e98d369448084abd, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 45375
+    BasePower: 642
   - Name: "\u0421\u043B\u0435\u0434\u043E\u043F\u044B\u0442"
     Icon: {fileID: 21300024, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 97557
+    BasePower: 1156
   - Name: "\u0420\u0435\u0439\u0434\u0436\u0435\u0440"
     Icon: {fileID: 21300026, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 209749
+    BasePower: 2082
   - Name: "\u041C\u043E\u043D\u0430\u0445"
     Icon: {fileID: 21300022, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 450960
+    BasePower: 3748
   - Name: "\u041C\u0435\u0447\u043D\u0438\u043A"
     Icon: {fileID: -7929151455688192581, guid: f5f1c19ce87450f4b97f8b363746558d, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 969564
+    BasePower: 6746
   - Name: "\u041A\u043E\u043F\u0435\u0439\u0449\u0438\u043A"
     Icon: {fileID: -6099911575230324936, guid: f5f1c19ce87450f4b97f8b363746558d, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 2084564
+    BasePower: 12143
   - Name: "\u0413\u0430\u0440\u043F\u0443\u043D\u0449\u0438\u043A"
     Icon: {fileID: 21300010, guid: 5cf1b4629c7cb104e98d369448084abd, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 4481813
+    BasePower: 21859
   - Name: "\u0413\u0432\u0430\u0440\u0434\u0435\u0435\u0446"
     Icon: {fileID: -3808366360947604237, guid: f5f1c19ce87450f4b97f8b363746558d, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 9635899
+    BasePower: 39346
   - Name: "\u041A\u0443\u0437\u043D\u0435\u0446"
     Icon: {fileID: 21300010, guid: e48ddf4fb7304ce4ab48711eb6617a57, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 20717184
+    BasePower: 70823
   - Name: "\u0428\u0430\u0445\u0442\u0435\u0440"
     Icon: {fileID: 21300022, guid: e48ddf4fb7304ce4ab48711eb6617a57, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 44541947
+    BasePower: 127482
   - Name: "\u041F\u043E\u0432\u0430\u0440"
     Icon: {fileID: 21300008, guid: e48ddf4fb7304ce4ab48711eb6617a57, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 95765186
+    BasePower: 229468
   - Name: "\u0428\u0443\u0442"
     Icon: {fileID: 3141136379158657811, guid: f5f1c19ce87450f4b97f8b363746558d, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 205895150
+    BasePower: 413042
   - Name: "\u0421\u0442\u0440\u0430\u043D\u043D\u0438\u043A"
     Icon: {fileID: 21300028, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 442674574
+    BasePower: 743477
   - Name: "\u041D\u0435\u0437\u043D\u0430\u043A\u043E\u043C\u0435\u0446"
     Icon: {fileID: 21300020, guid: e48ddf4fb7304ce4ab48711eb6617a57, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 951750334
+    BasePower: 1338258
   - Name: "\u0422\u0435\u043D\u044C"
     Icon: {fileID: 21300006, guid: e48ddf4fb7304ce4ab48711eb6617a57, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 2046263218
+    BasePower: 2408865
   - Name: "\u0410\u0441\u0441\u0430\u0441\u0438\u043D"
     Icon: {fileID: 21300016, guid: e48ddf4fb7304ce4ab48711eb6617a57, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 4399465919
+    BasePower: 4335958
   - Name: "\u0421\u043B\u0435\u043F\u043E\u0439 \u043A\u043B\u0438\u043D\u043E\u043A"
     Icon: {fileID: 21300016, guid: 5cf1b4629c7cb104e98d369448084abd, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 9458851727
+    BasePower: 7804725
   - Name: "\u0410\u043B\u044B\u0439 \u043C\u0430\u0433"
     Icon: {fileID: 21300006, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 20336531213
+    BasePower: 14048506
   - Name: "\u0412\u043E\u043B\u0448\u0435\u0431\u043D\u0438\u043A"
     Icon: {fileID: 21300004, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 43723542109
+    BasePower: 25287310
   - Name: "\u0412\u0435\u0434\u044C\u043C\u0430\u043A"
     Icon: {fileID: 21300018, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 94005615536
+    BasePower: 45517159
   - Name: "\u0421\u0442\u0430\u0440\u0435\u0446"
     Icon: {fileID: 21300004, guid: 5cf1b4629c7cb104e98d369448084abd, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 202112073403
+    BasePower: 81930887
   - Name: "\u0421\u0442\u0430\u0440\u0435\u0439\u0448\u0438\u043D\u0430"
     Icon: {fileID: 21300028, guid: e48ddf4fb7304ce4ab48711eb6617a57, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 434540957817
+    BasePower: 147475597
   - Name: "\u041B\u0435\u0441\u043D\u043E\u0439 \u0434\u0443\u0445"
     Icon: {fileID: 21300012, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 934263059306
+    BasePower: 265456074
   - Name: "\u0421\u0430\u0442\u0438\u0440"
     Icon: {fileID: 21300010, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 2008665577509
+    BasePower: 477820934
   - Name: "\u041A\u043E\u0441\u0442\u044F\u043D\u043E\u0439 \u0432\u043E\u0438\u043D"
     Icon: {fileID: 21300014, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 4318630991645
+    BasePower: 860077682
   - Name: "\u0413\u043E\u0431\u043B\u0438\u043D"
     Icon: {fileID: 21300024, guid: 5cf1b4629c7cb104e98d369448084abd, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 9285056632037
+    BasePower: 1548139828
   - Name: "\u041C\u0443\u043C\u0438\u044F"
     Icon: {fileID: 21300012, guid: e48ddf4fb7304ce4ab48711eb6617a57, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 19962871758880
+    BasePower: 2786651691
   - Name: "\u0421\u043A\u0435\u043B\u0435\u0442"
     Icon: {fileID: 21300028, guid: 5cf1b4629c7cb104e98d369448084abd, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 42920174281594
+    BasePower: 5015973044
   - Name: "\u041A\u0430\u0442\u043E\u0440\u0436\u043D\u0438\u043A"
     Icon: {fileID: 21300030, guid: e48ddf4fb7304ce4ab48711eb6617a57, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 92278374705427
+    BasePower: 9028751479
   - Name: "\u0413\u043B\u0430\u0434\u0438\u0430\u0442\u043E\u0440"
     Icon: {fileID: 21300024, guid: e48ddf4fb7304ce4ab48711eb6617a57, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 198398505616668
+    BasePower: 16251752662
   - Name: "\u0411\u0435\u0440\u0441\u0435\u0440\u043A"
     Icon: {fileID: -608674410997092170, guid: f5f1c19ce87450f4b97f8b363746558d, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 426556787075837
+    BasePower: 29253154793
   - Name: "\u0426\u0435\u043F\u0435\u0431\u043E\u0439"
     Icon: {fileID: 7896234578679360209, guid: f5f1c19ce87450f4b97f8b363746558d, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 917097092213048
+    BasePower: 52655678627
   - Name: "\u0420\u044B\u0446\u0430\u0440\u044C"
     Icon: {fileID: 4424676782209778794, guid: f5f1c19ce87450f4b97f8b363746558d, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 1971758748258050
+    BasePower: 94780221530
   - Name: "\u0412\u0441\u0430\u0434\u043D\u0438\u043A"
     Icon: {fileID: -4963137977137257419, guid: f5f1c19ce87450f4b97f8b363746558d, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 4239281308754820
+    BasePower: 170604398754
   - Name: "\u0411\u0435\u043B\u044B\u0439 \u0432\u0441\u0430\u0434\u043D\u0438\u043A"
     Icon: {fileID: 21300014, guid: e48ddf4fb7304ce4ab48711eb6617a57, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 9114454813822860
+    BasePower: 307087917757
   - Name: "\u0412\u0441\u0430\u0434\u043D\u0438\u043A \u043C\u0430\u0441\u043A\u0438"
     Icon: {fileID: 21300030, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 19596077849719100
+    BasePower: 552758251963
   - Name: "\u041F\u0438\u0440\u0430\u0442"
     Icon: {fileID: 21300026, guid: 5cf1b4629c7cb104e98d369448084abd, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 42131567376896100
+    BasePower: 994964853533
   - Name: "\u041A\u0440\u044E\u043A"
     Icon: {fileID: 21300018, guid: 5cf1b4629c7cb104e98d369448084abd, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 90582869860326700
+    BasePower: 1790936736360
   - Name: "\u041A\u0430\u043F\u0438\u0442\u0430\u043D"
     Icon: {fileID: 21300008, guid: 5cf1b4629c7cb104e98d369448084abd, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 1.94753170199702e+17
+    BasePower: 3223686125449
   - Name: "\u0414\u0443\u044D\u043B\u044F\u043D\u0442"
     Icon: {fileID: 21300030, guid: 5cf1b4629c7cb104e98d369448084abd, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 4.1871931592936e+17
+    BasePower: 5802635025809
   - Name: "\u0413\u0435\u0440\u043E\u0439"
     Icon: {fileID: -3631058824921839882, guid: f5f1c19ce87450f4b97f8b363746558d, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 9.00246529248124e+17
+    BasePower: 10444743046457
   - Name: "\u0422\u0435\u043C\u043D\u044B\u0439 \u0440\u044B\u0446\u0430\u0440\u044C"
     Icon: {fileID: 7920486848185049426, guid: f5f1c19ce87450f4b97f8b363746558d, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 1.93553003788347e+18
+    BasePower: 18800537483623
   - Name: "\u0427\u0435\u0440\u043D\u044B\u0439 \u0432\u0441\u0430\u0434\u043D\u0438\u043A"
     Icon: {fileID: 2682271827727872438, guid: f5f1c19ce87450f4b97f8b363746558d, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 4.16138958144945e+18
+    BasePower: 33840967470521
   - Name: "\u0412\u0430\u043C\u043F\u0438\u0440"
     Icon: {fileID: 21300020, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 8.94698760011633e+18
+    BasePower: 60913741446938
   - Name: "\u041A\u0442\u0443\u043B\u0445\u0443"
     Icon: {fileID: 21300012, guid: 5cf1b4629c7cb104e98d369448084abd, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 1.92360233402501e+19
+    BasePower: 109644734604489
   - Name: "\u0420\u043E\u0433\u0430\u0442\u044B\u0439 \u043A\u043E\u0440\u043E\u043B\u044C"
     Icon: {fileID: 21300016, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 4.13574501815377e+19
+    BasePower: 197360522288080
   - Name: "\u041F\u043E\u043B\u043A\u043E\u0432\u043E\u0434\u0435\u0446"
     Icon: {fileID: -8325569817615976368, guid: f5f1c19ce87450f4b97f8b363746558d, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 8.89185178903061e+19
+    BasePower: 355248940118545
   - Name: "\u041A\u043E\u0440\u043E\u043B\u044C"
     Icon: {fileID: -7773368686112363652, guid: f5f1c19ce87450f4b97f8b363746558d, type: 3}
     IsClickHero: 0
-    BaseCost: 5
-    BasePower: 1
+    BaseCost: 1.91174813464158e+20
+    BasePower: 639448092213381

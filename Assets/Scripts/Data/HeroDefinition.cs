@@ -7,6 +7,6 @@ public class HeroDefinition
     public string Name;
     public Sprite Icon;
     public bool IsClickHero;
-    public int BaseCost;
-    public int BasePower;
+    public double BaseCost;
+    public double BasePower;
 }
