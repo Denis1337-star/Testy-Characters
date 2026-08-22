@@ -1,4 +1,6 @@
-public class LevelService 
+using UnityEngine;
+
+public class LevelService
 {
     readonly GameState _state;
 
@@ -8,17 +10,30 @@ public class LevelService
     }
     public void RegisterKill()
     {
-        _state.killsOnLevel++;
+        if (_state.killsOnLevel < _state.killsToClear)
+            _state.killsOnLevel++;
 
-        if (_state.killsOnLevel >= _state.killsToClear)
+        bool isOnFrontier = _state.currentLevel >= _state.maxUnlockedLevel;
+        bool isCleared = _state.killsOnLevel >= _state.killsToClear;
+
+        if (isCleared && isOnFrontier)
         {
-            _state.currentLevel++;
+            _state.isBossActive = false;
+            _state.bossTimerLeft = 0f;
 
+            _state.currentLevel++;
             if (_state.currentLevel > _state.maxUnlockedLevel)
                 _state.maxUnlockedLevel = _state.currentLevel;
 
             _state.killsOnLevel = 0;
+            ApplayLevelRules();
         }
+        else
+        {
+            if (_state.killsOnLevel > _state.killsToClear)
+                _state.killsOnLevel = _state.killsToClear;
+        }
+       
         _state.Notify();
     }
     public bool TrySelectLevel(int level)
@@ -26,8 +41,69 @@ public class LevelService
         if (level < 1 || level > _state.maxUnlockedLevel) return false;
 
         _state.currentLevel = level;
-        _state.killsOnLevel = 0;
+        ApplayLevelRules();
+
+        if (level < _state.maxUnlockedLevel)
+            _state.killsOnLevel = _state.killsToClear;
+        else
+            _state.killsOnLevel = 0;
+
         _state.Notify();
         return true;
+    }
+    private void ApplayLevelRules()
+    {
+        _state.killsToClear = KillsRequiredFor(_state.currentLevel);
+
+        bool isBoss = IsBossLevel(_state.currentLevel);
+        bool isFrontier = _state.currentLevel >= _state.maxUnlockedLevel;
+
+        if (isBoss && isFrontier)
+        {
+            _state.isBossActive = true;
+            _state.bossTimerLeft = GameState.BossTimeLimit;
+        }
+        else
+        {
+            _state.isBossActive = false;
+            _state.bossTimerLeft = 0f;
+        }
+    }
+    public void FailBoss()
+    {
+        if (!IsBossLevel(_state.currentLevel)) return;
+
+        int back = Mathf.Max(1, _state.currentLevel - 1);
+
+        _state.currentLevel = back;
+        ApplayLevelRules();
+        _state.killsOnLevel = _state.killsToClear;
+        _state.isBossActive = false;
+        _state.bossTimerLeft = 0f;
+
+        _state.Notify();
+    }
+    public void TickBoss(float time)
+    {
+        if (!_state.isBossActive) return;
+
+        _state.bossTimerLeft -= time;
+
+        if (_state.bossTimerLeft <= 0f)
+        {
+            _state.bossTimerLeft = 0f;
+            FailBoss();
+        }
+    }
+    public static bool IsBossLevel(int level)
+    {
+        return level > 0 && level % 5 == 0;
+    }
+    public static int KillsRequiredFor(int level)
+    {
+        if (IsBossLevel(level))
+            return 1;
+        else
+            return 10;
     }
 }

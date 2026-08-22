@@ -11,7 +11,7 @@ public class CombatService
     public CombatService(GameState state)
     {
         _state = state;
-        _state.enemyhp = _state.enemyMaxHp;
+        RespawnEnemyHp();
     }
 
     public void Click()
@@ -44,14 +44,18 @@ public class CombatService
     }
     public void RewardForKill()
     {
-        _state.gold += Math.Floor(10d  *Math.Pow(1.15d, _state.currentLevel - 1));
+        _state.gold += GameFormulas.GoldForKill(_state.enemyMaxHp);
         _state.Notify();
 
     }
     public void RespawnEnemyHp()
     {
         _isDeathSent = false;
+
+        bool isBoss = LevelService.IsBossLevel(_state.currentLevel);
+        _state.enemyMaxHp = GameFormulas.EnemyMaxHP(_state.currentLevel, isBoss);
         _state.enemyhp = _state.enemyMaxHp;
+
         _state.Notify();
     }
 }

@@ -11,6 +11,9 @@ public class GameState
     public int killsToClear = 10;
     public int currentLevel = 1;
     public int maxUnlockedLevel = 1;
+    public float bossTimerLeft;
+    public bool isBossActive;
+    public const float BossTimeLimit = 30f;
 
     public double clickDamage = 1;
     public double totalDPS;

@@ -76,7 +76,7 @@ public class HeroCardView : MonoBehaviour
             power = def.BasePower;
 
         if (def.IsClickHero)
-            _powerText.text = $"{NumberFormatter.Format(power)}\nУрон клика";
+            _powerText.text = $"{NumberFormatter.Format(power)} Урон клика";
         else
             _powerText.text = $"{NumberFormatter.Format(power)} УВС";
 

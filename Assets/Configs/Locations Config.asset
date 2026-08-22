@@ -14,14 +14,77 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LocationsConfig
   LevelsPerLocation: 5
   Locations:
-  - Name: Swamp
+  - Name: Location_1
     Background: {fileID: 21300000, guid: a2bdc4e4cd3d3354188ef7f788d13310, type: 3}
     Enemies:
     - {fileID: 22100000, guid: 179e9942dd1f77d40a4309c474519e5f, type: 2}
-  - Name: FireCastle
+    - {fileID: 22100000, guid: 024a1089b977ff84b80bc2e75e12dbb4, type: 2}
+    - {fileID: 22100000, guid: 3e0a6618e00cde84282b90bb42044e6f, type: 2}
+    - {fileID: 22100000, guid: 8d7083155e1a94c4e94dd3824b8d9d02, type: 2}
+    - {fileID: 22100000, guid: e19741402eed3fd48a538cc688dc8d29, type: 2}
+    - {fileID: 22100000, guid: 3dd2418900a840241966da2c45e81b7b, type: 2}
+    - {fileID: 22100000, guid: 1d80cc31c791b6a4c8644f1e641337b5, type: 2}
+  - Name: Location_2
     Background: {fileID: 21300000, guid: 4a532dd35f05dfb4f9300ed162d0f212, type: 3}
     Enemies:
     - {fileID: 22100000, guid: 86978baae0bdd3849a35c1fd85c029a6, type: 2}
     - {fileID: 22100000, guid: 2fc9a388857ddd24db5ac81e340c332d, type: 2}
     - {fileID: 22100000, guid: 8430062ef7d734d4a970f74e14476e5c, type: 2}
     - {fileID: 22100000, guid: 951819ea412fc0942b88ae5ffdd25aac, type: 2}
+    - {fileID: 22100000, guid: 180d0aa9942e29943a65a8c293a0adf7, type: 2}
+    - {fileID: 22100000, guid: a345ab2a96f57ea47a992fc262ced2f5, type: 2}
+    - {fileID: 22100000, guid: 26c8985c1ddb1494ca0adcc30d8b3120, type: 2}
+  - Name: Location_3
+    Background: {fileID: 21300000, guid: 3da8400624113664b95cf9e97c30939e, type: 3}
+    Enemies:
+    - {fileID: 22100000, guid: f752b0795f4d15243ac16336e1310665, type: 2}
+    - {fileID: 22100000, guid: 8aab876e410eac24887c14d39e39dca9, type: 2}
+    - {fileID: 22100000, guid: bc9ac879b71a8d14d989bba2a1855912, type: 2}
+    - {fileID: 22100000, guid: 49b4dc275647ac4418c1a7273e536f29, type: 2}
+    - {fileID: 22100000, guid: a949c21c7ad19514e8da2099fe08544a, type: 2}
+    - {fileID: 22100000, guid: 1ab77539bf226654b977558a44a00fc4, type: 2}
+  - Name: Location_4
+    Background: {fileID: 21300000, guid: c5c1c5f9ff127ca4daa7315cfe9306a2, type: 3}
+    Enemies:
+    - {fileID: 22100000, guid: 30ad53f2f3f741d448b4e25a1dd56502, type: 2}
+    - {fileID: 22100000, guid: c7fc05a5ed64989459ca649a2b114b1b, type: 2}
+    - {fileID: 22100000, guid: 7966f344bd7f7124eaecdbe0161a5393, type: 2}
+    - {fileID: 22100000, guid: 5e2e1a92b8a7ceb49b90cd6dce9159fd, type: 2}
+    - {fileID: 22100000, guid: ab4b14f266a2a0b4abd6ab6a76f5cfed, type: 2}
+    - {fileID: 22100000, guid: 80caf3b0aba9e2d43bb4b4d79e1e0c95, type: 2}
+  - Name: Location_5
+    Background: {fileID: 21300000, guid: 4e6ded7faf684614c9a0c62d60d45f7c, type: 3}
+    Enemies:
+    - {fileID: 22100000, guid: 1b5bd24c5cb276048a2f29cbc49c88ec, type: 2}
+    - {fileID: 22100000, guid: b99a707ddd25e5e42a9d8877560b6745, type: 2}
+    - {fileID: 22100000, guid: 42be4f3beccfcbb48aa2398eab7779e7, type: 2}
+    - {fileID: 22100000, guid: e3b25773a018e934686375f86b05651f, type: 2}
+    - {fileID: 22100000, guid: ae74108e8769648469ffd5a5bcbb35a2, type: 2}
+    - {fileID: 22100000, guid: 2b031a90431f1a14190487d9ad3f2e9d, type: 2}
+  - Name: Location_6
+    Background: {fileID: 21300000, guid: 42f7d31307371314ca9a6a75a3420934, type: 3}
+    Enemies:
+    - {fileID: 22100000, guid: 88ebdd7cdf4f1ff439ed26f09b55dd36, type: 2}
+    - {fileID: 22100000, guid: 55c7c8b551f072f4e9f2e6c6e9c11ac2, type: 2}
+    - {fileID: 22100000, guid: 019761c86d9744f48ac8fc6f17a53923, type: 2}
+    - {fileID: 22100000, guid: 99b23692f0fc76746bf133a07dd4422c, type: 2}
+    - {fileID: 22100000, guid: f155eba9bf045854d905fc6bf4ea8250, type: 2}
+    - {fileID: 22100000, guid: 737cbfd4fdb72724682845f7a5656573, type: 2}
+  - Name: Location_7
+    Background: {fileID: 21300000, guid: f975bcfe28f382e42bfbb4b9988addfc, type: 3}
+    Enemies:
+    - {fileID: 22100000, guid: 46d18a122ea809c4c82f06c9125f024b, type: 2}
+    - {fileID: 22100000, guid: c7b1c69762f6d3749aeec18c9f46d5f8, type: 2}
+    - {fileID: 22100000, guid: a289cef24d7753f40b396b058f383382, type: 2}
+    - {fileID: 22100000, guid: 909fa7d7f0c37ef4bad3007a69fe10ee, type: 2}
+    - {fileID: 22100000, guid: e936d7c62eb85eb4fa8bf34e03822737, type: 2}
+    - {fileID: 22100000, guid: 698074a08709185489ed88de24e98f8b, type: 2}
+  - Name: Location_8
+    Background: {fileID: 21300000, guid: b188e9e295f5d36419e4f206a611e29f, type: 3}
+    Enemies:
+    - {fileID: 22100000, guid: e7dfec1ad07dc32439aee47817f3ffbb, type: 2}
+    - {fileID: 22100000, guid: eff41aa6e7df14742a7d344a51ed0f40, type: 2}
+    - {fileID: 22100000, guid: 5d1b5523b2a3a9543b9792e7823781c6, type: 2}
+    - {fileID: 22100000, guid: 9726b8366e661d249800711fc0dc3350, type: 2}
+    - {fileID: 22100000, guid: faf51ee284032bf4eb8a6e4b62a2619b, type: 2}
+    - {fileID: 22100000, guid: c59daa6ea16273d458876ec8a523eb54, type: 2}

@@ -1,0 +1,522 @@
+fileFormatVersion: 2
+guid: 8b216071febd36344a06fc66925dce08
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2001846557546202046
+    second: Enemy_38_Death_0
+  - first:
+      213: 3116891046987668677
+    second: Enemy_38_Death_1
+  - first:
+      213: 8206976292446925216
+    second: Enemy_38_Death_2
+  - first:
+      213: -9001750333295301879
+    second: Enemy_38_Death_3
+  - first:
+      213: 8134089668132905198
+    second: Enemy_38_Death_4
+  - first:
+      213: 4282241649640387854
+    second: Enemy_38_Death_5
+  - first:
+      213: -2075077557625989435
+    second: Enemy_38_Death_6
+  - first:
+      213: -1659126583590328069
+    second: Enemy_38_Death_7
+  - first:
+      213: 5224982543508407166
+    second: Enemy_38_Death_8
+  - first:
+      213: -3356684536121288984
+    second: Enemy_38_Death_9
+  - first:
+      213: -2016694558608688635
+    second: Enemy_38_Death_10
+  - first:
+      213: 690494856374561433
+    second: Enemy_38_Death_11
+  - first:
+      213: -5084790654746269423
+    second: Enemy_38_Death_12
+  - first:
+      213: -5785793064021359530
+    second: Enemy_38_Death_13
+  - first:
+      213: 4460593195224962777
+    second: Enemy_38_Death_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemy_38_Death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 799
+        width: 168
+        height: 225
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24cbe9289230834e0800000000000000
+      internalID: -2001846557546202046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_38_Death_1
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 797
+        width: 170
+        height: 227
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc9b4ba4eb614b20800000000000000
+      internalID: 3116891046987668677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_38_Death_2
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 796
+        width: 169
+        height: 228
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1f95f947905e170800000000000000
+      internalID: 8206976292446925216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_38_Death_3
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 795
+        width: 171
+        height: 229
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90bed23e3cb531380800000000000000
+      internalID: -9001750333295301879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_38_Death_4
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 794
+        width: 169
+        height: 230
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0ac38f47712e070800000000000000
+      internalID: 8134089668132905198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_38_Death_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 546
+        width: 191
+        height: 228
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e05b23197149d6b30800000000000000
+      internalID: 4282241649640387854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_38_Death_6
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 559
+        width: 211
+        height: 215
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c65150a4f7d333e0800000000000000
+      internalID: -2075077557625989435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_38_Death_7
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 575
+        width: 221
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf8e0b3a92999f8e0800000000000000
+      internalID: -1659126583590328069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_38_Death_8
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 592
+        width: 228
+        height: 182
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e738f6fa0fdd28840800000000000000
+      internalID: 5224982543508407166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_38_Death_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 353
+        width: 231
+        height: 170
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e69179e239aa61d0800000000000000
+      internalID: -3356684536121288984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_38_Death_10
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 354
+        width: 228
+        height: 169
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a7aaddbf24304e0800000000000000
+      internalID: -2016694558608688635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_38_Death_11
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 355
+        width: 230
+        height: 168
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99aa079d961259900800000000000000
+      internalID: 690494856374561433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_38_Death_12
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 355
+        width: 230
+        height: 168
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1196f9207d13f69b0800000000000000
+      internalID: -5084790654746269423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_38_Death_13
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 62
+        width: 230
+        height: 168
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 654861bdcdbb4bfa0800000000000000
+      internalID: -5785793064021359530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_38_Death_14
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 62
+        width: 229
+        height: 168
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d698e8b0e537ed30800000000000000
+      internalID: 4460593195224962777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a027b4e6188bfbc40b2a7858d9d2682f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Enemy_38_Death_0: -2001846557546202046
+      Enemy_38_Death_1: 3116891046987668677
+      Enemy_38_Death_10: -2016694558608688635
+      Enemy_38_Death_11: 690494856374561433
+      Enemy_38_Death_12: -5084790654746269423
+      Enemy_38_Death_13: -5785793064021359530
+      Enemy_38_Death_14: 4460593195224962777
+      Enemy_38_Death_2: 8206976292446925216
+      Enemy_38_Death_3: -9001750333295301879
+      Enemy_38_Death_4: 8134089668132905198
+      Enemy_38_Death_5: 4282241649640387854
+      Enemy_38_Death_6: -2075077557625989435
+      Enemy_38_Death_7: -1659126583590328069
+      Enemy_38_Death_8: 5224982543508407166
+      Enemy_38_Death_9: -3356684536121288984
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
