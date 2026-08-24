@@ -30,19 +30,17 @@ public class LevelHudView : MonoBehaviour
         _lastLevelButton.onClick.AddListener(OnLastLevelClicked);
         _nextLevelButton.onClick.AddListener(OnNextLevelClicked);
 
-        _state.Changed += Refresh;
+        _levelService.ZoneChanged += Refresh;
+        _levelService.ProgressChanged += Refresh;
         Refresh();
     }
     private void OnDestroy()
     {
-        if (_state != null)
-            _state.Changed -= Refresh;
+        _levelService.ZoneChanged -= Refresh;
+        _levelService.ProgressChanged -= Refresh;
 
-        if (_lastLevelButton != null)
-            _lastLevelButton.onClick.RemoveListener(OnLastLevelClicked);
-
-        if (_nextLevelButton != null)
-            _nextLevelButton.onClick.RemoveListener(OnNextLevelClicked);
+        _lastLevelButton.onClick.RemoveListener(OnLastLevelClicked);
+        _nextLevelButton.onClick.RemoveListener(OnNextLevelClicked);
     }
     private void OnLastLevelClicked()
     {

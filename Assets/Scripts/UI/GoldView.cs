@@ -5,22 +5,28 @@ using Zenject;
 public class GoldView : MonoBehaviour
 {
     [SerializeField] TMP_Text _goldText;
-    GameState _state;
+    private GameState _state;
+    private CombatService _combatService;
+    private HeroService _heroService;
 
     [Inject]
-    private void Construct(GameState gameState)
+    private void Construct(GameState gameState, CombatService combatService, HeroService heroService)
     {
         _state = gameState;
+        _combatService = combatService;
+        _heroService = heroService;
     }
 
     private void Start()
     {
-        _state.Changed += Refresh;
+        _combatService.GoldChanged+= Refresh;
+        _heroService.Upgraded += Refresh;
         Refresh();
     }
     private void OnDestroy()
     {
-        _state.Changed -= Refresh;
+        _combatService.GoldChanged -= Refresh;
+        _heroService.Upgraded -= Refresh;
     }
     private void Refresh()
     {

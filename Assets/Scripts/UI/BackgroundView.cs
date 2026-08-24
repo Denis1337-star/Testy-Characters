@@ -6,24 +6,26 @@ public class BackgroundView : MonoBehaviour
 {
     [SerializeField] private Image _background;
 
-    GameState _state;
-    LocationService _locationService;
-    private int _lastLocationIndex = 1;
+    private GameState _state;
+    private LocationService _locationService;
+    private LevelService _levelService;
+    private int _lastLocationIndex = -1;
 
     [Inject]
-    private void Construct(GameState gameState, LocationService locationService)
+    private void Construct(GameState gameState, LocationService locationService, LevelService levelService)
     {
         _state = gameState;
         _locationService = locationService;
+        _levelService = levelService;
     }
     private void Start()
     {
-        _state.Changed += Refresh;
+        _levelService.ZoneChanged += Refresh;
         Refresh();
     }
     private void OnDestroy()
     {
-        _state.Changed -= Refresh;
+       _levelService.ZoneChanged -= Refresh;
     }
     private void Refresh()
     {

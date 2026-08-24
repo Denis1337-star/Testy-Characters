@@ -7,6 +7,8 @@ public class CombatService
 
     public event Action Damaged;
     public event Action EnemyDied;
+    public event Action HpChanged;
+    public event Action GoldChanged;
 
     public CombatService(GameState state)
     {
@@ -31,7 +33,7 @@ public class CombatService
         _state.enemyhp -= amount;
         if (_state.enemyhp < 0) _state.enemyhp = 0;
 
-        _state.Notify();
+        HpChanged?.Invoke();
 
         if (isFromClick)
             Damaged?.Invoke();
@@ -45,7 +47,7 @@ public class CombatService
     public void RewardForKill()
     {
         _state.gold += GameFormulas.GoldForKill(_state.enemyMaxHp);
-        _state.Notify();
+        GoldChanged?.Invoke();
 
     }
     public void RespawnEnemyHp()
@@ -56,6 +58,6 @@ public class CombatService
         _state.enemyMaxHp = GameFormulas.EnemyMaxHP(_state.currentLevel, isBoss);
         _state.enemyhp = _state.enemyMaxHp;
 
-        _state.Notify();
+        HpChanged?.Invoke();
     }
 }

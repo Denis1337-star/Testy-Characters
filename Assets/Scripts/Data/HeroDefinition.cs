@@ -9,4 +9,5 @@ public class HeroDefinition
     public bool IsClickHero;
     public double BaseCost;
     public double BasePower;
+    public HeroSkillDefinition[] Skills;
 }

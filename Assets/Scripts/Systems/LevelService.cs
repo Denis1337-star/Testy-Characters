@@ -1,8 +1,11 @@
+using System;
 using UnityEngine;
 
 public class LevelService
 {
     readonly GameState _state;
+    public event Action ZoneChanged;
+    public event Action ProgressChanged;
 
     public LevelService(GameState state)
     {
@@ -27,14 +30,16 @@ public class LevelService
 
             _state.killsOnLevel = 0;
             ApplayLevelRules();
+            RaizeZoneChanged();
+            RaiseProgressChanged();
         }
         else
         {
             if (_state.killsOnLevel > _state.killsToClear)
                 _state.killsOnLevel = _state.killsToClear;
+
+            RaiseProgressChanged();
         }
-       
-        _state.Notify();
     }
     public bool TrySelectLevel(int level)
     {
@@ -48,7 +53,8 @@ public class LevelService
         else
             _state.killsOnLevel = 0;
 
-        _state.Notify();
+        RaizeZoneChanged();
+        RaiseProgressChanged();
         return true;
     }
     private void ApplayLevelRules()
@@ -81,7 +87,8 @@ public class LevelService
         _state.isBossActive = false;
         _state.bossTimerLeft = 0f;
 
-        _state.Notify();
+        RaizeZoneChanged();
+        RaiseProgressChanged();
     }
     public void TickBoss(float time)
     {
@@ -106,4 +113,13 @@ public class LevelService
         else
             return 10;
     }
+    private void RaizeZoneChanged()
+    {
+        ZoneChanged?.Invoke();
+    }
+    private void RaiseProgressChanged()
+    {
+        ProgressChanged?.Invoke();
+    }
+    
 }

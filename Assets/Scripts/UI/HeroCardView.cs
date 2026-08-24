@@ -26,7 +26,8 @@ public class HeroCardView : MonoBehaviour
         if (!_isBound)
         {
             _upgradeButton.onClick.AddListener(OnUpgradeClicked);
-            _state.Changed += Refresh;
+            _heroService.Upgraded+= Refresh;
+            _heroService.MultiplierChanged += Refresh;
             _isBound = true;
         }
 
@@ -37,7 +38,8 @@ public class HeroCardView : MonoBehaviour
     }
     private void OnDestroy()
     {
-        _state.Changed -= Refresh;
+        _heroService.Upgraded -= Refresh;
+        _heroService.MultiplierChanged -= Refresh;
     }
     private void OnUpgradeClicked()
     {
@@ -68,9 +70,9 @@ public class HeroCardView : MonoBehaviour
                 _upgradeLabel.text = $"x{mult}";
         }
 
-        double cost = _heroService.GetUpgradeCost(_index);
+        double cost = _heroService.GetUpgradeCost(_index,mult);
         _costText.text = NumberFormatter.Format(cost);
-
+         
         double power = _heroService.GetPower(_index);
         if (lvl <= 0)
             power = def.BasePower;

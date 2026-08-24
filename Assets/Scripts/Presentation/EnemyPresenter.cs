@@ -25,13 +25,16 @@ public class EnemyPresenter : MonoBehaviour
     {
         _combatService.Damaged += PlayHurt;
         _combatService.EnemyDied += OnEnemyDied;
+        _levelService.ZoneChanged += OnZoneChanged;
 
         ApplyFromState();
+        _combatService.RespawnEnemyHp();
     }
     private void OnDestroy()
     {
         _combatService.EnemyDied -= OnEnemyDied;
         _combatService.Damaged -= PlayHurt;
+        _levelService.ZoneChanged -= OnZoneChanged;
     }
     public void PlayHurt()
     {
@@ -46,16 +49,13 @@ public class EnemyPresenter : MonoBehaviour
     }
     private void AfterDeath()
     {
+        int levelBefore = _state.currentLevel;
+
         _combatService.RewardForKill();
         _levelService.RegisterKill();
 
-        var pool = _locationService.GetEnemyPool();
-        if (pool.Length == 0) return;
-
-        _state.currentEnemyIndex = PickNextIndex(_state.currentEnemyIndex, pool.Length);
-
-        ApplyController(pool[_state.currentEnemyIndex]);
-        _combatService.RespawnEnemyHp();
+        if (_state.currentLevel == levelBefore)
+            OnZoneChanged();
     }
     private int PickNextIndex(int current, int length)
     {
@@ -87,5 +87,14 @@ public class EnemyPresenter : MonoBehaviour
             _state.currentEnemyIndex = 0;
 
         ApplyController(pool[_state.currentEnemyIndex]);
+    }
+    private void OnZoneChanged()
+    {
+        var pool = _locationService.GetEnemyPool();
+        if (pool.Length == 0) return;
+
+        _state.currentEnemyIndex = PickNextIndex(_state.currentEnemyIndex, pool.Length);
+        ApplyController(pool[_state.currentEnemyIndex]);
+        _combatService.RespawnEnemyHp();
     }
 }

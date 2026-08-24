@@ -9,20 +9,22 @@ public class EnemyHpView : MonoBehaviour
     [SerializeField] private Image _hpFill;
 
     private GameState _state;
+    private CombatService _combatService;
 
     [Inject]
-    private void Construct(GameState gameState)
+    private void Construct(GameState gameState, CombatService combatService)
     {
         _state = gameState;
+        _combatService = combatService;
     }
     private void Start()
     {
-        _state.Changed += Refresh;
+       _combatService.HpChanged += Refresh;
         Refresh();
     }
     private void OnDestroy()
     {
-        _state.Changed -= Refresh;
+        _combatService.HpChanged-= Refresh;
     }
     private void Refresh()
     {

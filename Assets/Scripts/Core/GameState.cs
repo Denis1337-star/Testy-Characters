@@ -1,4 +1,3 @@
-using System;
 public class GameState 
 {
     public double gold;
@@ -18,11 +17,5 @@ public class GameState
     public double clickDamage = 1;
     public double totalDPS;
     public int[] heroLevels;
-
-    public event Action Changed;
-
-    public void Notify() 
-    {
-        Changed?.Invoke();
-    } 
+    public bool[][] heroSkillsOwned;  // [heroIndex][skillIndex] = куплен ли скилл
 }
