@@ -8,7 +8,6 @@ public class UpgradeMultiplierView : MonoBehaviour
     [SerializeField] Button _x10;
     [SerializeField] Button _x25;
     [SerializeField] Button _x100;
-
     [SerializeField] Color _activeColor;
     [SerializeField] Color _idleColor;
 

@@ -1,7 +1,7 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Game/Heroes Config")]
+[CreateAssetMenu(menuName = "Game/Heroes Catalog")]
 public class HeroesConfig :ScriptableObject
 {
-    public HeroDefinition[] Heroes;
+    public HeroConfig[] Heroes;
 }

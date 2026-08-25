@@ -139,7 +139,7 @@ public class HeroService
 
         _state.totalDPS = dps;
     }
-    public HeroDefinition GetDifinition(int index)
+    public HeroConfig GetDifinition(int index)
     {
         return _heroesConfig.Heroes[index];
     }
@@ -215,6 +215,15 @@ public class HeroService
             mult *= (1d + GetSkill(heroIndex, s).DamageBonus);
         }
         return mult;
+    }
+    public bool IsSkillVisibleOnCard(int heroIndex, int skillIndex)
+    {
+        int level = GetLevel(heroIndex);
+        if (level <= 0) return false;
+
+        if (skillIndex == 0) return true;
+
+        return IsSkillUnlocked(heroIndex, skillIndex);
     }
 
 }

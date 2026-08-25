@@ -1,8 +1,7 @@
-using System;
 using UnityEngine;
 
-[Serializable]
-public class HeroDefinition
+[CreateAssetMenu(menuName ="Game/Hero Config")]
+public class HeroConfig : ScriptableObject
 {
     public string Name;
     public Sprite Icon;

@@ -9,13 +9,15 @@ public class HeroListView : MonoBehaviour
 
     HeroService _heroService;
     GameState _state;
+    CombatService _combatService;
     readonly List<HeroCardView> _spawned = new();
 
     [Inject]
-    private void Construct(GameState gameState, HeroService heroService)
+    private void Construct(GameState gameState, HeroService heroService, CombatService combatService)
     {
         _state = gameState;
         _heroService = heroService;
+        _combatService = combatService;
     }
 
     private void Start()
@@ -40,7 +42,7 @@ public class HeroListView : MonoBehaviour
             if (!_heroService.IsVisible(i)) continue;
 
             var card = Instantiate(_cardPrefab, _content);
-            card.Setup(i, _heroService, _state);
+            card.Setup(i, _heroService, _state,_combatService);
             _spawned.Add(card);
         }
     }

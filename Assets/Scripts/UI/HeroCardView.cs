@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,35 +12,46 @@ public class HeroCardView : MonoBehaviour
     [SerializeField] Button _upgradeButton;
     [SerializeField] TMP_Text _upgradeLabel;
     [SerializeField] TMP_Text _costText;
+    [SerializeField] Button _skillsRowButton;
+    [SerializeField] Transform _skillsContainer;
+    [SerializeField] HeroSkillIcconView _skillIconPrefab;
+
+    readonly List<HeroSkillIcconView> _skillIconList = new();
+    bool _skillsBuilt;
 
     private int _index;
     HeroService _heroService;
     GameState _state;
+    CombatService _combatService;
     private bool _isBound;
 
-    public void Setup(int index, HeroService heroService, GameState gameState)
+    public void Setup(int index, HeroService heroService, GameState gameState,CombatService combatService)
     {
         _index = index;
         _heroService = heroService;
         _state = gameState;
+        _combatService = combatService;
 
         if (!_isBound)
         {
             _upgradeButton.onClick.AddListener(OnUpgradeClicked);
             _heroService.Upgraded+= Refresh;
             _heroService.MultiplierChanged += Refresh;
+            _combatService.GoldChanged += Refresh;
             _isBound = true;
         }
 
         var def = _heroService.GetDifinition(index);
         _icon.sprite = def.Icon;
         _nameText.text = def.Name;
+        BuildSkillIconOnce();
         Refresh();
     }
     private void OnDestroy()
     {
         _heroService.Upgraded -= Refresh;
         _heroService.MultiplierChanged -= Refresh;
+        _combatService.GoldChanged -= Refresh;
     }
     private void OnUpgradeClicked()
     {
@@ -83,6 +95,42 @@ public class HeroCardView : MonoBehaviour
             _powerText.text = $"{NumberFormatter.Format(power)} УВС";
 
         _upgradeButton.interactable = _heroService.CanAffordUpgarade(_index);
+
+        RefreshSkills();
+    }
+    private void BuildSkillIconOnce()
+    {
+        if (_skillsBuilt) return;
+        _skillsBuilt = true;
+
+        int count = _heroService.GetSkillCount(_index);
+        for (int s = 0; s < count; s++)
+        {
+            var view = Instantiate(_skillIconPrefab, _skillsContainer);
+            var skill = _heroService.GetSkill(_index, s);
+            view.Bind(skill.Icon);
+            _skillIconList.Add(view);
+        }
+    }
+    private void RefreshSkills()
+    {
+        int level = _heroService.GetLevel(_index);
+
+        if (level <= 0)
+        {
+            _skillsRowButton.gameObject.SetActive(false);
+            return;
+        }
+
+        _skillsRowButton.gameObject.SetActive(true);
+
+        for (int i = 0; i < _skillIconList.Count; i++)
+        {
+            bool isUnlocked  = _heroService.IsSkillVisibleOnCard(_index, i);
+            bool isOwnde = _heroService.IsSkillOwned(_index, i);
+            bool isCanAfford = _heroService.CanAffordSkill(_index, i);
+            _skillIconList[i].RefreshState(isUnlocked, isOwnde, isCanAfford);
+        }
     }
 
 }

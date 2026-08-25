@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4deb44c3f6715be4097d0afa124cdd70, type: 3}
+  m_Name: Hero_26
+  m_EditorClassIdentifier: Assembly-CSharp::HeroConfig
+  Name: "\u0422\u0435\u043D\u044C"
+  Icon: {fileID: 21300006, guid: e48ddf4fb7304ce4ab48711eb6617a57, type: 3}
+  IsClickHero: 0
+  BaseCost: 2046263218
+  BasePower: 2408865.9
+  Skills:
+  - Name: "\u041A\u0440\u0435\u043F\u043A\u0438\u0435 \u0440\u0443\u043A\u0438"
+    Description: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442 \u0423\u0412\u0421 \u0433\u0435\u0440\u043E\u044F <color=#7CFF6B>\u0422\u0435\u043D\u044C</color> \u043D\u0430 <color=#7CFF6B>100%</color>."
+    Icon: {fileID: 21300000, guid: 4d8312f5d237f4d46a4b969ab5e45c82, type: 3}
+    UnlockLevel: 10
+    Cost: 40253094666
+    DamageBonus: 1
+  - Name: "\u0423\u0434\u0430\u0440 \u043A\u043E\u043B\u043E\u0434\u044B"
+    Description: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442 \u0423\u0412\u0421 \u0433\u0435\u0440\u043E\u044F <color=#7CFF6B>\u0422\u0435\u043D\u044C</color> \u043D\u0430 <color=#7CFF6B>100%</color>."
+    Icon: {fileID: 21300000, guid: 3b6b30b9aa8bf1f4483130c6e71c25c3, type: 3}
+    UnlockLevel: 25
+    Cost: 111059557796
+    DamageBonus: 1
+  - Name: "\u041D\u0430\u0440\u043E\u0434\u043D\u044B\u0439 \u0437\u0430\u0434\u043E\u0440"
+    Description: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442 \u0423\u0412\u0421 \u0433\u0435\u0440\u043E\u044F <color=#7CFF6B>\u0422\u0435\u043D\u044C</color> \u043D\u0430 <color=#7CFF6B>100%</color>."
+    Icon: {fileID: 21300000, guid: cd813f3c3924d0446b015fc157170d3a, type: 3}
+    UnlockLevel: 50
+    Cost: 602768268982
+    DamageBonus: 1
+  - Name: "\u0417\u0430\u043A\u0430\u043B\u043A\u0430 \u043C\u0430\u0441\u0442\u0435\u0440\u0430"
+    Description: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442 \u0423\u0412\u0421 \u0433\u0435\u0440\u043E\u044F <color=#7CFF6B>\u0422\u0435\u043D\u044C</color> \u043D\u0430 <color=#7CFF6B>150%</color>."
+    Icon: {fileID: 21300000, guid: 484ac835bf69fbb4eb2fab942a59dad8, type: 3}
+    UnlockLevel: 75
+    Cost: 3271484177506
+    DamageBonus: 1.5
+  - Name: "\u0421\u0438\u043B\u0430 \u043F\u043E\u0441\u0435\u043B\u0435\u043D\u0438\u044F"
+    Description: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442 \u0423\u0412\u0421 \u0433\u0435\u0440\u043E\u044F <color=#7CFF6B>\u0422\u0435\u043D\u044C</color> \u043D\u0430 <color=#7CFF6B>200%</color>."
+    Icon: {fileID: 21300000, guid: 84f395b50849e234184f38da91b34431, type: 3}
+    UnlockLevel: 100
+    Cost: 17755760006646
+    DamageBonus: 2
+  - Name: "\u0414\u0443\u0445 \u043E\u0431\u0449\u0438\u043D\u044B"
+    Description: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442 \u0423\u0412\u0421 \u0433\u0435\u0440\u043E\u044F <color=#7CFF6B>\u0422\u0435\u043D\u044C</color> \u043D\u0430 <color=#7CFF6B>250%</color>."
+    Icon: {fileID: 21300000, guid: 19be8949aec831c42a29d0148f6edf5d, type: 3}
+    UnlockLevel: 125
+    Cost: 96368191410263
+    DamageBonus: 2.5
