@@ -16,6 +16,7 @@ public class HeroCardView : MonoBehaviour
     [SerializeField] Transform _skillsContainer;
     [SerializeField] HeroSkillIcconView _skillIconPrefab;
 
+    private HeroSkillsPanelView _skillPanel;
     readonly List<HeroSkillIcconView> _skillIconList = new();
     bool _skillsBuilt;
 
@@ -25,16 +26,19 @@ public class HeroCardView : MonoBehaviour
     CombatService _combatService;
     private bool _isBound;
 
-    public void Setup(int index, HeroService heroService, GameState gameState,CombatService combatService)
+    public void Setup(int index, HeroService heroService, GameState gameState,
+        CombatService combatService,HeroSkillsPanelView heroSkillsPanelView)
     {
         _index = index;
         _heroService = heroService;
         _state = gameState;
         _combatService = combatService;
+        _skillPanel = heroSkillsPanelView;
 
         if (!_isBound)
         {
             _upgradeButton.onClick.AddListener(OnUpgradeClicked);
+            _skillsRowButton.onClick.AddListener(OnSkillsRowClicked);
             _heroService.Upgraded+= Refresh;
             _heroService.MultiplierChanged += Refresh;
             _combatService.GoldChanged += Refresh;
@@ -52,6 +56,7 @@ public class HeroCardView : MonoBehaviour
         _heroService.Upgraded -= Refresh;
         _heroService.MultiplierChanged -= Refresh;
         _combatService.GoldChanged -= Refresh;
+        _skillsRowButton.onClick.RemoveListener(OnSkillsRowClicked);
     }
     private void OnUpgradeClicked()
     {
@@ -132,5 +137,9 @@ public class HeroCardView : MonoBehaviour
             _skillIconList[i].RefreshState(isUnlocked, isOwnde, isCanAfford);
         }
     }
-
+    private void OnSkillsRowClicked()
+    {
+        if (_heroService.GetLevel(_index) <= 0) return;
+        _skillPanel.Open(_index);
+    }
 }

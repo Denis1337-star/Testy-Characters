@@ -6,6 +6,7 @@ public class HeroListView : MonoBehaviour
 {
     [SerializeField] HeroCardView _cardPrefab;
     [SerializeField] Transform _content;
+    [SerializeField] HeroSkillsPanelView _skillsPanel;
 
     HeroService _heroService;
     GameState _state;
@@ -42,9 +43,9 @@ public class HeroListView : MonoBehaviour
             if (!_heroService.IsVisible(i)) continue;
 
             var card = Instantiate(_cardPrefab, _content);
-            card.Setup(i, _heroService, _state,_combatService);
+            card.Setup(i, _heroService, _state,_combatService,_skillsPanel);
             _spawned.Add(card);
-        }
+            card.Setup(i, _heroService, _state, _combatService, _skillsPanel);
+        }  
     }
-
 }
