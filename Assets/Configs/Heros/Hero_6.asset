@@ -19,38 +19,50 @@ MonoBehaviour:
   BasePower: 18.8
   Skills:
   - Name: "\u041E\u0441\u0442\u0440\u044B\u0439 \u043D\u0430\u043A\u043E\u043D\u0435\u0447\u043D\u0438\u043A"
-    Description: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442 \u0423\u0412\u0421 \u0433\u0435\u0440\u043E\u044F <color=#7CFF6B>\u0414\u0438\u043A\u0430\u0440\u044C</color> \u043D\u0430 <color=#7CFF6B>100%</color>."
-    Icon: {fileID: 21300000, guid: d83ec8a2332a17f4d9310f3415b42b47, type: 3}
+    Description: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442
+      \u0423\u0412\u0421 \u0433\u0435\u0440\u043E\u044F <color=#7CFF6B>\u0414\u0438\u043A\u0430\u0440\u044C</color>
+      \u043D\u0430 <color=#7CFF6B>100%</color>."
+    Icon: {fileID: 21300000, guid: ce0e9c614c20782498047fb16eb408c6, type: 3}
     UnlockLevel: 10
     Cost: 9029
     DamageBonus: 1
   - Name: "\u0417\u0430\u043B\u043F \u0441\u0442\u0440\u0435\u043B"
-    Description: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442 \u0423\u0412\u0421 \u0433\u0435\u0440\u043E\u044F <color=#7CFF6B>\u0414\u0438\u043A\u0430\u0440\u044C</color> \u043D\u0430 <color=#7CFF6B>100%</color>."
-    Icon: {fileID: 21300000, guid: d98b775a6f3c03e43ba95a50dd259d3f, type: 3}
+    Description: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442
+      \u0423\u0412\u0421 \u0433\u0435\u0440\u043E\u044F <color=#7CFF6B>\u0414\u0438\u043A\u0430\u0440\u044C</color>
+      \u043D\u0430 <color=#7CFF6B>100%</color>."
+    Icon: {fileID: 21300000, guid: e1244848fb707f54db5c8408561cf8da, type: 3}
     UnlockLevel: 25
     Cost: 24911
     DamageBonus: 1
   - Name: "\u041C\u0435\u0433\u0430 \u0437\u0430\u043B\u043F \u0441\u0442\u0440\u0435\u043B"
-    Description: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442 \u0423\u0412\u0421 \u0433\u0435\u0440\u043E\u044F <color=#7CFF6B>\u0414\u0438\u043A\u0430\u0440\u044C</color> \u043D\u0430 <color=#7CFF6B>100%</color>."
+    Description: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442
+      \u0423\u0412\u0421 \u0433\u0435\u0440\u043E\u044F <color=#7CFF6B>\u0414\u0438\u043A\u0430\u0440\u044C</color>
+      \u043D\u0430 <color=#7CFF6B>100%</color>."
     Icon: {fileID: 21300000, guid: 95916d24a5a199b4abc0cbff6abca015, type: 3}
     UnlockLevel: 50
     Cost: 135207
     DamageBonus: 1
   - Name: "\u041F\u0440\u043E\u0431\u0438\u0432\u043D\u044B\u0435 \u0441\u0442\u0440\u0435\u043B\u044B"
-    Description: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442 \u0423\u0412\u0421 \u0433\u0435\u0440\u043E\u044F <color=#7CFF6B>\u0414\u0438\u043A\u0430\u0440\u044C</color> \u043D\u0430 <color=#7CFF6B>150%</color>."
+    Description: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442
+      \u0423\u0412\u0421 \u0433\u0435\u0440\u043E\u044F <color=#7CFF6B>\u0414\u0438\u043A\u0430\u0440\u044C</color>
+      \u043D\u0430 <color=#7CFF6B>150%</color>."
     Icon: {fileID: 21300000, guid: 85f6db0efa996b342ac40bb7aa6eb2f9, type: 3}
     UnlockLevel: 75
     Cost: 733830
     DamageBonus: 1.5
   - Name: "\u042F\u0434 \u043B\u0435\u0441\u0430"
-    Description: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442 \u0423\u0412\u0421 \u0433\u0435\u0440\u043E\u044F <color=#7CFF6B>\u0414\u0438\u043A\u0430\u0440\u044C</color> \u043D\u0430 <color=#7CFF6B>200%</color>."
-    Icon: {fileID: 21300000, guid: 302b4dea97d5ec843923598abe23f69a, type: 3}
+    Description: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442
+      \u0423\u0412\u0421 \u0433\u0435\u0440\u043E\u044F <color=#7CFF6B>\u0414\u0438\u043A\u0430\u0440\u044C</color>
+      \u043D\u0430 <color=#7CFF6B>200%</color>."
+    Icon: {fileID: 21300000, guid: 36e517a665a5e5c4096575adea8394f3, type: 3}
     UnlockLevel: 100
     Cost: 3982817
     DamageBonus: 2
   - Name: "\u0414\u0443\u0445 \u043E\u0445\u043E\u0442\u044B"
-    Description: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442 \u0423\u0412\u0421 \u0433\u0435\u0440\u043E\u044F <color=#7CFF6B>\u0414\u0438\u043A\u0430\u0440\u044C</color> \u043D\u0430 <color=#7CFF6B>250%</color>."
-    Icon: {fileID: 21300000, guid: 04841b8a9cae96b42aa2a2689b689515, type: 3}
+    Description: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442
+      \u0423\u0412\u0421 \u0433\u0435\u0440\u043E\u044F <color=#7CFF6B>\u0414\u0438\u043A\u0430\u0440\u044C</color>
+      \u043D\u0430 <color=#7CFF6B>250%</color>."
+    Icon: {fileID: 21300000, guid: 1fe784c0346a64742a9ab94ab0dd7617, type: 3}
     UnlockLevel: 125
     Cost: 21616476
     DamageBonus: 2.5
