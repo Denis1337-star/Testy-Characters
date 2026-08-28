@@ -113,6 +113,16 @@ public class LevelService
         else
             return 10;
     }
+    public void ResetToFirstZone()
+    {
+        _state.currentLevel = 1;
+        _state.maxUnlockedLevel = 1;
+        _state.killsOnLevel = 0;
+
+        ApplayLevelRules();
+        RaizeZoneChanged();
+        RaiseProgressChanged();
+    }
     private void RaizeZoneChanged()
     {
         ZoneChanged?.Invoke();

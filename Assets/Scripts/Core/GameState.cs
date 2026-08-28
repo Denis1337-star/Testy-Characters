@@ -1,11 +1,9 @@
 public class GameState 
 {
     public double gold;
-
     public double enemyMaxHp = 10;
     public double enemyhp;
     public int currentEnemyIndex;
-
     public int killsOnLevel;
     public int killsToClear = 10;
     public int currentLevel = 1;
@@ -13,9 +11,10 @@ public class GameState
     public float bossTimerLeft;
     public bool isBossActive;
     public const float BossTimeLimit = 30f;
-
     public double clickDamage = 1;
     public double totalDPS;
     public int[] heroLevels;
     public bool[][] heroSkillsOwned;  // [heroIndex][skillIndex] = куплен ли скилл
+    public double goldEarnedThisRun;
+    public double crystals;
 }

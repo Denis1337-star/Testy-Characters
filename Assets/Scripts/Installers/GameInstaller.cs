@@ -16,5 +16,6 @@ public class GameInstaller : MonoInstaller
         Container.Bind<LevelService>().AsSingle();
         Container.Bind<LocationService>().AsSingle();
         Container.Bind<HeroService>().AsSingle();
+        Container.Bind<RebirthService>().AsSingle();
     }
 }

@@ -46,7 +46,13 @@ public class CombatService
     }
     public void RewardForKill()
     {
-        _state.gold += GameFormulas.GoldForKill(_state.enemyMaxHp);
+        double reward = GameFormulas.GoldForKill(_state.enemyMaxHp);
+        reward *= GameFormulas.GoldMultiplierFromCrystals(_state.crystals);
+        reward = Math.Floor(reward);
+        if (reward < 1d) reward = 1d;
+
+        _state.gold += reward;
+        _state.goldEarnedThisRun += reward;
         GoldChanged?.Invoke();
 
     }
@@ -59,5 +65,9 @@ public class CombatService
         _state.enemyhp = _state.enemyMaxHp;
 
         HpChanged?.Invoke();
+    }
+    public void NotifyGoldChanged()
+    {
+        GoldChanged?.Invoke();
     }
 }

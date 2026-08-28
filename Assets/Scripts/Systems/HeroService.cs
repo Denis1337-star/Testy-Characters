@@ -225,5 +225,26 @@ public class HeroService
 
         return IsSkillUnlocked(heroIndex, skillIndex);
     }
+    public void ResetForRebirth()
+    {
+        int count = HeroCount;
+        for (int i = 0; i < count; i++)
+            _state.heroLevels[i] = 0;
+
+        if (count > 0)
+            _state.heroLevels[0] = 1;
+
+        for (int i = 0; i < count; i++)
+        {
+            var owned = _state.heroSkillsOwned[i];
+            if (owned == null) continue;
+
+            for (int s = 0; s < owned.Length; s++)
+                owned[s] = false;
+        }
+        RecalculatePower();
+        ListChanged?.Invoke();
+        Upgraded?.Invoke();
+    }
 
 }

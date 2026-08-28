@@ -15,6 +15,7 @@ public class BossTimerView : MonoBehaviour
     }
     private void Update()
     {
+        
         bool show = _state.isBossActive;
 
         if (_root.activeSelf != show)
