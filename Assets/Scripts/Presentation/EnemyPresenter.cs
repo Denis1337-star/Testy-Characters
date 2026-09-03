@@ -9,7 +9,7 @@ public class EnemyPresenter : MonoBehaviour
     CombatService _combatService;
     LevelService _levelService;
     LocationService _locationService;
-    GameState _state;
+    GameState _gameState;
 
     [Inject]
     private void Contstruct(CombatService combatService, LevelService levelService,
@@ -18,7 +18,7 @@ public class EnemyPresenter : MonoBehaviour
         _combatService = combatService;
         _levelService = levelService;
         _locationService = locationService;
-        _state = gameState;
+        _gameState = gameState;
     }
 
     private void Start()
@@ -49,12 +49,12 @@ public class EnemyPresenter : MonoBehaviour
     }
     private void AfterDeath()
     {
-        int levelBefore = _state.currentLevel;
+        int levelBefore = _gameState.currentLevel;
 
         _combatService.RewardForKill();
         _levelService.RegisterKill();
 
-        if (_state.currentLevel == levelBefore)
+        if (_gameState.currentLevel == levelBefore)
             OnZoneChanged();
     }
     private int PickNextIndex(int current, int length)
@@ -83,18 +83,18 @@ public class EnemyPresenter : MonoBehaviour
         var pool = _locationService.GetEnemyPool();
         if (pool.Length == 0) return;
 
-        if (_state.currentEnemyIndex < 0 || _state.currentEnemyIndex >= pool.Length)
-            _state.currentEnemyIndex = 0;
+        if (_gameState.currentEnemyIndex < 0 || _gameState.currentEnemyIndex >= pool.Length)
+            _gameState.currentEnemyIndex = 0;
 
-        ApplyController(pool[_state.currentEnemyIndex]);
+        ApplyController(pool[_gameState.currentEnemyIndex]);
     }
     private void OnZoneChanged()
     {
         var pool = _locationService.GetEnemyPool();
         if (pool.Length == 0) return;
 
-        _state.currentEnemyIndex = PickNextIndex(_state.currentEnemyIndex, pool.Length);
-        ApplyController(pool[_state.currentEnemyIndex]);
+        _gameState.currentEnemyIndex = PickNextIndex(_gameState.currentEnemyIndex, pool.Length);
+        ApplyController(pool[_gameState.currentEnemyIndex]);
         _combatService.RespawnEnemyHp();
     }
 }

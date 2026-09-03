@@ -2,7 +2,7 @@ using System;
 
 public class RebirthService 
 {
-    readonly GameState _state;
+    readonly GameState _gameState;
     readonly HeroService _heroService;
     readonly LevelService _levelService;
     readonly CombatService _combatService;
@@ -11,28 +11,28 @@ public class RebirthService
     public RebirthService(GameState gameState, HeroService heroService,
         LevelService levelService, CombatService combatService)
     {
-        _state = gameState;
+        _gameState = gameState;
         _heroService = heroService;
         _levelService = levelService;
         _combatService = combatService;
     }
-    public double GetPending()
+    public double GetPendingCrystals()
     {
-        return GameFormulas.PendingCrystals(_state.goldEarnedThisRun);
+        return GameFormulas.PendingCrystals(_gameState.goldEarnedThisRun);
     }
     public bool CanRebirth()
     {
-        return GetPending() >= 1d;
+        return GetPendingCrystals() >= 1d;
     }
     public void DoRebirth()
     {
         if (!CanRebirth()) return;
 
-        double pending = GetPending();
-        _state.crystals += pending;
+        double pending = GetPendingCrystals();
+        _gameState.crystals += pending;
 
-        _state.gold = 0d;
-        _state.goldEarnedThisRun = 0d;
+        _gameState.gold = 0d;
+        _gameState.goldEarnedThisRun = 0d;
 
         _heroService.ResetForRebirth();
         _levelService.ResetToFirstZone();
@@ -40,5 +40,31 @@ public class RebirthService
         _combatService.NotifyGoldChanged();
 
         Rebirthed?.Invoke();
+    }
+    public RebirthPreview GetPreview()
+    {
+        double pendingWhole = GetPendingCrystals();
+        double pendingExact = GameFormulas.PendingCrystalsRaw(_gameState.goldEarnedThisRun);
+        double crystalsOwned = _gameState.crystals;
+        double crystalsAfterPrestige = crystalsOwned + pendingWhole;
+        double crystalsForExperience = GameFormulas.CrystalsForXp(crystalsOwned, pendingExact);
+
+        GameFormulas.GetCharacterProgress(
+            crystalsForExperience,
+            out int profileLevel,
+            out double experienceIntoLevel,
+            out int experienceToNextLevel);
+
+        return new RebirthPreview
+        {
+            Pending = pendingWhole,
+            CrystalsAfter = crystalsAfterPrestige,
+            CrystalsForExperience = crystalsForExperience,
+            GoldBonusDeltaPercent = GameFormulas.GoldBonusDeltaPercent(crystalsOwned, crystalsAfterPrestige),
+            ProfileLevel = profileLevel,
+            XpIntoLevel = experienceIntoLevel,
+            XpToNextLevel = experienceToNextLevel,
+            CanRebirth = CanRebirth()
+        };
     }
 }

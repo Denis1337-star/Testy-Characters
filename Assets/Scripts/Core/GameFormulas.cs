@@ -15,12 +15,12 @@ public static class GameFormulas
 
     public static double EnemyMaxHP(int level, bool isBoss)
     {
-        double hp = EnemyHpBase * Math.Pow(EnemyHpGrowth, level - 1);
+        double enemyMaxHp = EnemyHpBase * Math.Pow(EnemyHpGrowth, level - 1);
 
         if (isBoss)
-            hp *= BossHpMultiplier;
+            enemyMaxHp *= BossHpMultiplier;
 
-        return Math.Max(1d, Math.Floor(hp));
+        return Math.Max(1d, Math.Floor(enemyMaxHp));
     }
     public static double GoldForKill(double enemyMaxHp)
     {
@@ -32,6 +32,11 @@ public static class GameFormulas
         if (goldEarnedThisRun < 1d) return 0d;
         return Math.Floor(Math.Pow(goldEarnedThisRun / CrystalGoldDivisor, CrystalExponent));
     }
+    public static double PendingCrystalsRaw(double goldEarnedThisRun)
+    {
+        if (goldEarnedThisRun < 1d) return 0d;
+        return Math.Pow(goldEarnedThisRun / CrystalGoldDivisor, CrystalExponent);
+    }
     public static double TotalXpFromCrystals(double crystals)
     {
         if (crystals < 1d) return 0d;
@@ -39,6 +44,10 @@ public static class GameFormulas
         int exponent = (int)Math.Floor(log10);
         double mantissa = crystals / Math.Pow(10d, exponent);
         return (mantissa / 10d + exponent) * CrystalXpScale;
+    }
+    public static double CrystalsForXp(double crystalsOwned, double pendingRaw)
+    {
+        return Math.Max(crystalsOwned, pendingRaw);
     }
     public static int XpToNextLevel(int level)
     {
@@ -66,5 +75,13 @@ public static class GameFormulas
     {
         if (crystals < 1d) return 1d;
         return 1d + CrystalEffectBase + CrystalStandInTrees * Math.Log10(1d + crystals);
+    }
+    public static double GoldBonusPercent(double crystals)
+    {
+        return (GoldMultiplierFromCrystals(crystals) - 1d) * 100d;
+    }
+    public static double GoldBonusDeltaPercent(double crystalNow, double crystalAfter)
+    {
+        return GoldBonusPercent(crystalAfter) - GoldBonusPercent(crystalNow);
     }
 }

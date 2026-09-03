@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 3452864389418128350}
   - component: {fileID: 1934906335905775777}
   m_Layer: 5
-  m_Name: NameHero_Text
+  m_Name: 'HeroName_Text '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1000,7 +1000,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 5056445880065381235}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -1054,7 +1054,7 @@ GameObject:
   - component: {fileID: 1446266111078815204}
   - component: {fileID: 1292083765168035128}
   m_Layer: 5
-  m_Name: 'Level_Text '
+  m_Name: 'HeroLevel_Text '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

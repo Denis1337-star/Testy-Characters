@@ -3,102 +3,102 @@ using UnityEngine;
 
 public class LevelService
 {
-    readonly GameState _state;
+    readonly GameState _gameState;
     public event Action ZoneChanged;
     public event Action ProgressChanged;
 
     public LevelService(GameState state)
     {
-        _state = state;
+        _gameState = state;
     }
     public void RegisterKill()
     {
-        if (_state.killsOnLevel < _state.killsToClear)
-            _state.killsOnLevel++;
+        if (_gameState.killsOnLevel < _gameState.killsToClear)
+            _gameState.killsOnLevel++;
 
-        bool isOnFrontier = _state.currentLevel >= _state.maxUnlockedLevel;
-        bool isCleared = _state.killsOnLevel >= _state.killsToClear;
+        bool isOnFrontier = _gameState.currentLevel >= _gameState.maxUnlockedLevel;
+        bool isCleared = _gameState.killsOnLevel >= _gameState.killsToClear;
 
         if (isCleared && isOnFrontier)
         {
-            _state.isBossActive = false;
-            _state.bossTimerLeft = 0f;
+            _gameState.isBossActive = false;
+            _gameState.bossTimerLeft = 0f;
 
-            _state.currentLevel++;
-            if (_state.currentLevel > _state.maxUnlockedLevel)
-                _state.maxUnlockedLevel = _state.currentLevel;
+            _gameState.currentLevel++;
+            if (_gameState.currentLevel > _gameState.maxUnlockedLevel)
+                _gameState.maxUnlockedLevel = _gameState.currentLevel;
 
-            _state.killsOnLevel = 0;
-            ApplayLevelRules();
-            RaizeZoneChanged();
+            _gameState.killsOnLevel = 0;
+            ApplyLevelRules();
+            RaiseZoneChanged();
             RaiseProgressChanged();
         }
         else
         {
-            if (_state.killsOnLevel > _state.killsToClear)
-                _state.killsOnLevel = _state.killsToClear;
+            if (_gameState.killsOnLevel > _gameState.killsToClear)
+                _gameState.killsOnLevel = _gameState.killsToClear;
 
             RaiseProgressChanged();
         }
     }
     public bool TrySelectLevel(int level)
     {
-        if (level < 1 || level > _state.maxUnlockedLevel) return false;
+        if (level < 1 || level > _gameState.maxUnlockedLevel) return false;
 
-        _state.currentLevel = level;
-        ApplayLevelRules();
+        _gameState.currentLevel = level;
+        ApplyLevelRules();
 
-        if (level < _state.maxUnlockedLevel)
-            _state.killsOnLevel = _state.killsToClear;
+        if (level < _gameState.maxUnlockedLevel)
+            _gameState.killsOnLevel = _gameState.killsToClear;
         else
-            _state.killsOnLevel = 0;
+            _gameState.killsOnLevel = 0;
 
-        RaizeZoneChanged();
+        RaiseZoneChanged();
         RaiseProgressChanged();
         return true;
     }
-    private void ApplayLevelRules()
+    private void ApplyLevelRules()
     {
-        _state.killsToClear = KillsRequiredFor(_state.currentLevel);
+        _gameState.killsToClear = KillsRequiredFor(_gameState.currentLevel);
 
-        bool isBoss = IsBossLevel(_state.currentLevel);
-        bool isFrontier = _state.currentLevel >= _state.maxUnlockedLevel;
+        bool isBoss = IsBossLevel(_gameState.currentLevel);
+        bool isFrontier = _gameState.currentLevel >= _gameState.maxUnlockedLevel;
 
         if (isBoss && isFrontier)
         {
-            _state.isBossActive = true;
-            _state.bossTimerLeft = GameState.BossTimeLimit;
+            _gameState.isBossActive = true;
+            _gameState.bossTimerLeft = GameState.BossTimeLimit;
         }
         else
         {
-            _state.isBossActive = false;
-            _state.bossTimerLeft = 0f;
+            _gameState.isBossActive = false;
+            _gameState.bossTimerLeft = 0f;
         }
     }
     public void FailBoss()
     {
-        if (!IsBossLevel(_state.currentLevel)) return;
+        if (!IsBossLevel(_gameState.currentLevel)) return;
 
-        int back = Mathf.Max(1, _state.currentLevel - 1);
+        int back = Mathf.Max(1, _gameState.currentLevel - 1);
 
-        _state.currentLevel = back;
-        ApplayLevelRules();
-        _state.killsOnLevel = _state.killsToClear;
-        _state.isBossActive = false;
-        _state.bossTimerLeft = 0f;
+        _gameState.currentLevel = back;
+        ApplyLevelRules();
+        _gameState.killsOnLevel = _gameState.killsToClear;
+        _gameState.isBossActive = false;
+        _gameState.bossTimerLeft = 0f;
 
-        RaizeZoneChanged();
+        RaiseZoneChanged();
         RaiseProgressChanged();
     }
     public void TickBoss(float time)
     {
-        if (!_state.isBossActive) return;
+        if (!_gameState.isBossActive) return;
 
-        _state.bossTimerLeft -= time;
+        _gameState.bossTimerLeft -= time;
 
-        if (_state.bossTimerLeft <= 0f)
+        if (_gameState.bossTimerLeft <= 0f)
         {
-            _state.bossTimerLeft = 0f;
+            _gameState.bossTimerLeft = 0f;
             FailBoss();
         }
     }
@@ -115,15 +115,15 @@ public class LevelService
     }
     public void ResetToFirstZone()
     {
-        _state.currentLevel = 1;
-        _state.maxUnlockedLevel = 1;
-        _state.killsOnLevel = 0;
+        _gameState.currentLevel = 1;
+        _gameState.maxUnlockedLevel = 1;
+        _gameState.killsOnLevel = 0;
 
-        ApplayLevelRules();
-        RaizeZoneChanged();
+        ApplyLevelRules();
+        RaiseZoneChanged();
         RaiseProgressChanged();
     }
-    private void RaizeZoneChanged()
+    private void RaiseZoneChanged()
     {
         ZoneChanged?.Invoke();
     }

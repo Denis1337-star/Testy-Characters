@@ -2,42 +2,42 @@ using UnityEngine;
 
 public class LocationService 
 {
-    readonly GameState _state;
-    readonly LocationsConfig _config;
+    readonly GameState _gameState;
+    readonly LocationsConfig _locationConfig;
 
     public LocationService(GameState state, LocationsConfig config)
     {
-        _state = state;
-        _config = config;
+        _gameState = state;
+        _locationConfig = config;
     }
 
     public int GetLocationIndex()
     {
-        if (_config.Locations == null || _config.Locations.Length == 0)
+        if (_locationConfig.Locations == null || _locationConfig.Locations.Length == 0)
             return 0;
 
-        int per = Mathf.Max(1, _config.LevelsPerLocation);
-        int index = (_state.currentLevel - 1) / per;
-        return index % _config.Locations.Length;
+        int perLocation = Mathf.Max(1, _locationConfig.LevelsPerLocation);
+        int index = (_gameState.currentLevel - 1) / perLocation;
+        return index % _locationConfig.Locations.Length;
     }
 
     public LocationData GetCurrentLocation()
     {
         int i = GetLocationIndex();
-        return _config.Locations[i];
+        return _locationConfig.Locations[i];
     }
 
     public RuntimeAnimatorController[] GetEnemyPool()
     {
-        var loc = GetCurrentLocation();
+        var location = GetCurrentLocation();
 
-        if (loc == null || loc.Enemies == null)
+        if (location == null || location.Enemies == null)
             return System.Array.Empty<RuntimeAnimatorController>();
-        return loc.Enemies;
+        return location.Enemies;
     }
     public Sprite GetBackground()
     {
-        var loc = GetCurrentLocation();
-        return loc != null ? loc.Background : null;
+        var location = GetCurrentLocation();
+        return location != null ? location.Background : null;
     }
 }

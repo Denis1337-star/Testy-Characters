@@ -2,7 +2,7 @@ using System;
 
 public class HeroService
 {
-    readonly GameState _state;
+    readonly GameState _gameState;
     readonly HeroesConfig _heroesConfig;
     public int UpgradeMultiplier { get; private set; } = 1;
     public event Action ListChanged;
@@ -12,7 +12,7 @@ public class HeroService
 
     public HeroService(GameState gameState, HeroesConfig heroesConfig)
     {
-        _state = gameState;
+        _gameState = gameState;
         _heroesConfig = heroesConfig;
 
         InitLevels();
@@ -26,11 +26,11 @@ public class HeroService
         else
             count = 0;
 
-        _state.heroLevels = new int[count];
+        _gameState.heroLevels = new int[count];
         if (count > 0)
-            _state.heroLevels[0] = 1;
+            _gameState.heroLevels[0] = 1;
 
-        _state.heroSkillsOwned = new bool[count][];
+        _gameState.heroSkillsOwned = new bool[count][];
         for (int i = 0; i < count; i++)
         {
             int skillCount = 0;
@@ -39,15 +39,15 @@ public class HeroService
             else
                 skillCount = 0;
 
-            _state.heroSkillsOwned[i] = new bool[skillCount];
+            _gameState.heroSkillsOwned[i] = new bool[skillCount];
         }
     }
     public int HeroCount
     {
         get
         {
-            if (_state.heroLevels != null)
-                return _state.heroLevels.Length;
+            if (_gameState.heroLevels != null)
+                return _gameState.heroLevels.Length;
             else
                 return 0;
         }
@@ -55,38 +55,38 @@ public class HeroService
     public bool IsVisible(int index)
     {
         if (index < 0 || index >= HeroCount) return false;
-        if (_state.heroLevels[index] > 0) return true;
+        if (_gameState.heroLevels[index] > 0) return true;
 
         int highestOwned = -1;
         for (int i = 0; i < HeroCount; i++)
-            if (_state.heroLevels[i] > 0) highestOwned = i;
+            if (_gameState.heroLevels[i] > 0) highestOwned = i;
 
         return index == highestOwned + 1;
     }
     public int GetLevel(int index)
     {
-        return _state.heroLevels[index];
+        return _gameState.heroLevels[index];
     }
     public double GetPower(int index)
     {
-        var def = _heroesConfig.Heroes[index];
-        int lvl = _state.heroLevels[index];
+        var definition = _heroesConfig.Heroes[index];
+        int level = _gameState.heroLevels[index];
 
-        if (lvl <= 0) return 0d;
+        if (level <= 0) return 0d;
 
-        return def.BasePower * lvl * GetSkillMultiplier(index);
+        return definition.BasePower * level * GetSkillMultiplier(index);
     }
     public double GetUpgradeCost(int index, int levels)
     {
         if (levels < 1) levels = 1;
 
-        var def = _heroesConfig.Heroes[index];
-        int current = _state.heroLevels[index];
+        var definition = _heroesConfig.Heroes[index];
+        int current = _gameState.heroLevels[index];
         double total = 0d;
 
         for (int i = 0; i < levels; i++)
         {
-            total += Math.Floor(def.BaseCost * Math.Pow(1.07d, current + i));
+            total += Math.Floor(definition.BaseCost * Math.Pow(1.07d, current + i));
         }
         return total;
     }
@@ -97,17 +97,17 @@ public class HeroService
 
         int levels = UpgradeMultiplier;
         double cost = GetUpgradeCost(index, levels);
-        if (_state.gold < cost) return false;
+        if (_gameState.gold < cost) return false;
 
-        bool isWasLocked = _state.heroLevels[index] == 0;
+        bool wasLocked = _gameState.heroLevels[index] == 0;
 
-        _state.gold -= cost;
-        _state.heroLevels[index] += levels;
+        _gameState.gold -= cost;
+        _gameState.heroLevels[index] += levels;
 
         RecalculatePower();
         Upgraded?.Invoke();
 
-        if (isWasLocked)
+        if (wasLocked)
             ListChanged?.Invoke();
 
         return true;
@@ -120,44 +120,44 @@ public class HeroService
 
         for (int i = 0; i < HeroCount; i++)
         {
-            int lvl = _state.heroLevels[i];
-            if (lvl <= 0) continue;
+            int level = _gameState.heroLevels[i];
+            if (level <= 0) continue;
 
-            var def = _heroesConfig.Heroes[i];
+            var definition = _heroesConfig.Heroes[i];
             double power = GetPower(i);
 
-            if (def.IsClickHero)
+            if (definition.IsClickHero)
                 click += power;
             else
                 dps += power;
         }
 
         if (click > 0d)
-            _state.clickDamage = click;
+            _gameState.clickDamage = click;
         else
-            _state.clickDamage = 1d;
+            _gameState.clickDamage = 1d;
 
-        _state.totalDPS = dps;
+        _gameState.totalDPS = dps;
     }
-    public HeroConfig GetDifinition(int index)
+    public HeroConfig GetDefinition(int index)
     {
         return _heroesConfig.Heroes[index];
     }
-    public void SetUpgradeMultiplier(int mult)
+    public void SetUpgradeMultiplier(int levelsToBuy)
     {
-        if (mult != 1 && mult != 10 & mult != 25 && mult != 100)
+        if (levelsToBuy != 1 && levelsToBuy != 10 && levelsToBuy != 25 && levelsToBuy != 100)
             return;
 
-        if (UpgradeMultiplier == mult)
+        if (UpgradeMultiplier == levelsToBuy)
             return;
 
-        UpgradeMultiplier = mult;
+        UpgradeMultiplier = levelsToBuy;
         MultiplierChanged?.Invoke();
     }
-    public bool CanAffordUpgarade(int index)
+    public bool CanAffordUpgrade(int index)
     {
         if (!IsVisible(index)) return false;
-        return _state.gold >= GetUpgradeCost(index, UpgradeMultiplier);
+        return _gameState.gold >= GetUpgradeCost(index, UpgradeMultiplier);
     }
     public int GetSkillCount(int heroIndex)
     {
@@ -173,7 +173,7 @@ public class HeroService
     }
     public bool IsSkillOwned(int heroIndex, int skillIndex)
     {
-        return _state.heroSkillsOwned[heroIndex][skillIndex];
+        return _gameState.heroSkillsOwned[heroIndex][skillIndex];
     }
     public bool IsSkillUnlocked(int heroIndex, int skillIndex)
     {
@@ -191,14 +191,14 @@ public class HeroService
         if (!IsSkillUnlocked(heroIndex, skillIndex)) return false;
         if (IsSkillOwned(heroIndex, skillIndex)) return false;
 
-        return _state.gold >= GetSkill(heroIndex, skillIndex).Cost;
+        return _gameState.gold >= GetSkill(heroIndex, skillIndex).Cost;
     }
     public bool TryBuySkill(int heroIndex, int skillIndex)
     {
         if (!CanAffordSkill(heroIndex, skillIndex)) return false;
 
-        _state.gold -= GetSkill(heroIndex, skillIndex).Cost;
-        _state.heroSkillsOwned[heroIndex][skillIndex] = true;
+        _gameState.gold -= GetSkill(heroIndex, skillIndex).Cost;
+        _gameState.heroSkillsOwned[heroIndex][skillIndex] = true;
 
         RecalculatePower();
         Upgraded?.Invoke();
@@ -206,15 +206,15 @@ public class HeroService
     }
     public double GetSkillMultiplier(int heroIndex)
     {
-        double mult = 1d;
+        double levelsToBuy = 1d;
         int count = GetSkillCount(heroIndex);
 
         for (int s = 0; s < count; s++)
         {
             if (!IsSkillOwned(heroIndex, s)) continue;
-            mult *= (1d + GetSkill(heroIndex, s).DamageBonus);
+            levelsToBuy *= (1d + GetSkill(heroIndex, s).DamageBonus);
         }
-        return mult;
+        return levelsToBuy;
     }
     public bool IsSkillVisibleOnCard(int heroIndex, int skillIndex)
     {
@@ -229,14 +229,14 @@ public class HeroService
     {
         int count = HeroCount;
         for (int i = 0; i < count; i++)
-            _state.heroLevels[i] = 0;
+            _gameState.heroLevels[i] = 0;
 
         if (count > 0)
-            _state.heroLevels[0] = 1;
+            _gameState.heroLevels[0] = 1;
 
         for (int i = 0; i < count; i++)
         {
-            var owned = _state.heroSkillsOwned[i];
+            var owned = _gameState.heroSkillsOwned[i];
             if (owned == null) continue;
 
             for (int s = 0; s < owned.Length; s++)

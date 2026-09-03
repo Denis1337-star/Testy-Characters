@@ -2,9 +2,8 @@ using System;
 
 public class CombatService 
 {
-    readonly GameState _state;
+    readonly GameState _gameState;
     private bool _isDeathSent;
-
     public event Action Damaged;
     public event Action EnemyDied;
     public event Action HpChanged;
@@ -12,33 +11,33 @@ public class CombatService
 
     public CombatService(GameState state)
     {
-        _state = state;
+        _gameState = state;
         RespawnEnemyHp();
     }
 
     public void Click()
     {
-        if (_state.enemyhp <= 0) return;
-        ApplyDamage(_state.clickDamage, isFromClick: true);
+        if (_gameState.enemyhp <= 0) return;
+        ApplyDamage(_gameState.clickDamage, isFromClick: true);
     }
     public void Tick(float dt)
     {
-        if (_state.totalDPS <= 0d || _state.enemyhp <= 0) return;
-        ApplyDamage(_state.totalDPS * dt, isFromClick: false);
+        if (_gameState.totalDPS <= 0d || _gameState.enemyhp <= 0) return;
+        ApplyDamage(_gameState.totalDPS * dt, isFromClick: false);
     }
     private void ApplyDamage(double amount, bool isFromClick)
     {
-        if (amount <= 0d || _state.enemyhp <= 0) return;
+        if (amount <= 0d || _gameState.enemyhp <= 0) return;
 
-        _state.enemyhp -= amount;
-        if (_state.enemyhp < 0) _state.enemyhp = 0;
+        _gameState.enemyhp -= amount;
+        if (_gameState.enemyhp < 0) _gameState.enemyhp = 0;
 
         HpChanged?.Invoke();
 
         if (isFromClick)
             Damaged?.Invoke();
 
-        if (_state.enemyhp <= 0 && !_isDeathSent)
+        if (_gameState.enemyhp <= 0 && !_isDeathSent)
         {
             _isDeathSent = true;
             EnemyDied?.Invoke();
@@ -46,23 +45,22 @@ public class CombatService
     }
     public void RewardForKill()
     {
-        double reward = GameFormulas.GoldForKill(_state.enemyMaxHp);
-        reward *= GameFormulas.GoldMultiplierFromCrystals(_state.crystals);
+        double reward = GameFormulas.GoldForKill(_gameState.enemyMaxHp);
+        reward *= GameFormulas.GoldMultiplierFromCrystals(_gameState.crystals);
         reward = Math.Floor(reward);
         if (reward < 1d) reward = 1d;
 
-        _state.gold += reward;
-        _state.goldEarnedThisRun += reward;
+        _gameState.gold += reward;
+        _gameState.goldEarnedThisRun += reward;
         GoldChanged?.Invoke();
-
     }
     public void RespawnEnemyHp()
     {
         _isDeathSent = false;
 
-        bool isBoss = LevelService.IsBossLevel(_state.currentLevel);
-        _state.enemyMaxHp = GameFormulas.EnemyMaxHP(_state.currentLevel, isBoss);
-        _state.enemyhp = _state.enemyMaxHp;
+        bool isBoss = LevelService.IsBossLevel(_gameState.currentLevel);
+        _gameState.enemyMaxHp = GameFormulas.EnemyMaxHP(_gameState.currentLevel, isBoss);
+        _gameState.enemyhp = _gameState.enemyMaxHp;
 
         HpChanged?.Invoke();
     }
